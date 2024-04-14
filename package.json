@@ -1,0 +1,9 @@
+{
+  "name": "phase-1-project",
+  "version": "1.0.0",
+  "description": "flatiron phase-1 api project",
+  "main": "src/js/index.js",
+  "repository": "https://github.com/t0nylombardi/phase-1-javascript-project-mode.git",
+  "author": "t0nylombardi",
+  "license": "MIT"
+}
