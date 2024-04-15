@@ -34,6 +34,10 @@ const renderCard = (item) => {
             <p>${images[1].caption}</p>
           </div>
         </div>
+        <div id="wantedCardDetails">
+          ${details}
+          <a href=${url} target="_blank">More Info</a>
+        </div>
       </div>
       <div class="col2">
         <p>Age: <span>${isNull(age_range)  }</span></p>
@@ -44,10 +48,9 @@ const renderCard = (item) => {
         <p> Eyes: <span>${isNull(eyes)}</span></p>
         <p> Hair: <span>${isNull(hair)}</span></p>
         <p> Place of Birth: <span>${isNull(place_of_birth)}</span></p>
-        <div class="card-details">
-          ${details}
-        </div>
       </div>
+    </div>
+  </div>
   `
   wantedCard.appendChild(card);
 }

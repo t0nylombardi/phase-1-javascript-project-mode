@@ -26,20 +26,18 @@ body {
   padding: 0;
 }
 
-#wantedCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+section {
+  width: 50%;
+  height: 100vh;
+  /* padding: 0 12rem; */
+  margin: 0 auto;
+}
 
-  padding: 1rem 5rem;
+#wantedCard {
+  /* margin: 0 auto; */
 }
 
 #wantedCard .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
   background-color: var(--color-secondary-background);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -50,45 +48,48 @@ body {
 
 .card #container {
   display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  width: 100%;
+  flex-flow: row;
+  padding: 0 2rem;
 }
 
 .card #container #wantedCardImages {
-  flex: 1;
+
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  margin: 0 3rem;
+  justify-content: start;
+  /* width: 60%; */
+  /* margin: 0 3rem; */
+}
+
+.card #container #wantedCardDetails P {
+  margin: 0;
+  padding: 0;
+}
+
+.card #container #wantedCardDetails {
+  margin: 0 3rem 0 0;
+  padding: 0;
 }
 
 .card #container .col1 {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 0 3rem;
+  width: 75%;
+  margin: 0;
 }
 
 .card #container div {
   margin: 1rem;
 }
 
-.card #container div p {
-  padding: 1rem 0;
-}
-
 .card #container .col2 {
-  flex: 1;
+  height: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin: 0 3rem;
+  justify-content: space-between;
+  margin: 0 0 13rem 0;
 }
 
 .card #container .col2 > p {
+  padding: 0.5rem 0;
   margin: 0;
 }
 
