@@ -1,60 +1,43 @@
-// FBI Wanted 
-// items array
-// fetch data from FBI API
- // destructure data into items array
-let hair, title, place_of_birth, weight, race, eyes, age_range, details, sex, images, height_max, height_min, weight_min, weight_max, url;
+// Project Requirements
 
-fetch('https://api.fbi.gov/wanted/v1/list')
-  .then(response => response.json())
-  .then(data => {
-    const items = data.items;
-    items.forEach(item => {
-      if (item.details != null) renderCard(item);
-    });
-  })
-  .catch(error => console.error(error));
+  // 1. Your app must be a HTML/CSS/JS frontend that accesses data from a public API.
+    // Your API should return a collection of at least 5 objects with each object having at least 3 attributes.
+    // All interactions between the client and the API should be handled asynchronously and use JSON as the
+    // communication format.
+
+  // 2. Your entire app must run on a single page. There should be NO redirects or reloads.
+
+  // 3. Use at least 3 distinct event listenersLinks to an external site.
+    // If you had 3 click events, that would only count as 1 distinct event and you
+    // would need to add at least 2 more. Think search or filter functionality, toggling dark/light mode, upvoting posts, etc.
+    // Each of your event listeners should also have its own unique callback function.
+
+  // 4. Your project must implement at least one instance of array iteration using available array
+  // methods (map, forEach, filter, etc). Manipulating your API data in some way should present an
+  // opportunity to implement your array iteration.
+
+  // 5. Follow good coding practices. Keep your code DRY.
 
 
-const renderCard = (item) => {
-  const {hair, title, place_of_birth, race, eyes, age_range, details, sex, images, height_max, height_min, weight_min, weight_max, url} = item;
 
-  const wantedCard = document.getElementById('wantedCard');
-  const card = document.createElement('div');
-  card.innerHTML = `
-  <div class="card">
-    <h2>${title}</h2>
-    <div id="container">
-      <div class="col1">
-        <div id="wantedCardImages">
-          <div>
-            <img src=${images[0].large} alt=${title} />
-          </div>
-          <div>
-            <img src=${images[1].large} alt=${title} />
-            <p>${images[1].caption}</p>
-          </div>
-        </div>
-        <div id="wantedCardDetails">
-          ${details}
-          <a href=${url} target="_blank">More Info</a>
-        </div>
-      </div>
-      <div class="col2">
-        <p>Age: <span>${isNull(age_range)  }</span></p>
-        <p> Sex: <span>${sex}</span></p>
-        <p> Race: <span>${isNull(race)}</span></p>
-        <p> Height: <span>${isNull(height_min)} lbs - ${isNull(height_max)} lbs</span></p>
-        <p> Weight: <span>${isNull(weight_min)} lbs - ${isNull(weight_max)} lbs</span></p>
-        <p> Eyes: <span>${isNull(eyes)}</span></p>
-        <p> Hair: <span>${isNull(hair)}</span></p>
-        <p> Place of Birth: <span>${isNull(place_of_birth)}</span></p>
-      </div>
-    </div>
-  </div>
-  `
-  wantedCard.appendChild(card);
+import {renderCard} from './components/wantedCardTemplate.js';
+import { loadDB } from './db/index.js';
+import { WantedController } from './controllers/wantedController.js';
+
+const init = async () => {
+  await loadDB();
 }
 
-const isNull = (value) => {
-  return value ? value : 'N/A';
-}
+const Wanted = new WantedController();
+const persons = Wanted.getAllPersons();
+persons.then((data) => {
+  data.forEach((item) => {
+    renderCard(item);
+  });
+});
+
+
+
+
+
+addEventListener('DOMContentLoaded', init);

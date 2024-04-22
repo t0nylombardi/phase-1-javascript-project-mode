@@ -61,12 +61,12 @@ section {
   /* margin: 0 3rem; */
 }
 
-.card #container #wantedCardDetails P {
+.card #container #wantedCardElaboration P {
   margin: 0;
   padding: 0;
 }
 
-.card #container #wantedCardDetails {
+.card #container #wantedCardElaboration {
   margin: 0 3rem 0 0;
   padding: 0;
 }
