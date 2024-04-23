@@ -42,14 +42,42 @@ const renderHtml = (person) => {
         </div>
       </div>
       <div class="col2">
-        <p>Age: <span>${isNull(age_range)  }</span></p>
-        <p> Sex: <span>${sex}</span></p>
-        <p> Race: <span>${isNull(race)}</span></p>
-        <p> Height: <span>${isNull(height_min)} lbs - ${isNull(height_max)} lbs</span></p>
-        <p> Weight: <span>${isNull(weight_min)} lbs - ${isNull(weight_max)} lbs</span></p>
-        <p> Eyes: <span>${isNull(eyes)}</span></p>
-        <p> Hair: <span>${isNull(hair)}</span></p>
-        <p> Place of Birth: <span>${isNull(place_of_birth)}</span></p>
+        <table class="wanted-person-details">
+          <tbody>
+            <tr>
+              <td>Age:</td>
+              <td>${isNull(age_range)  }</td>
+            </tr>
+            <tr>
+              <td>Sex:</td>
+              <td>${sex}</td>
+            </tr>
+            <tr>
+              <td>Race:</td>
+              <td>${race}</td>
+            </tr>
+            <tr>
+              <td>Height:</td>
+              <td>${isNull(height_min)} lbs - ${isNull(height_max)} lbs</td>
+            </tr>
+            <tr>
+              <td>Weight:</td>
+              <td>${isNull(weight_min)} lbs - ${isNull(weight_max)} lbs</td>
+            </tr>
+            <tr>
+              <td>Eyes:</td>
+              <td>${isNull(eyes)}</td>
+            </tr>
+            <tr>
+              <td>Hair:</td>
+              <td>${isNull(hair)}</td>
+            </tr>
+            <tr>
+              <td>Weight:</td>
+              <td>${isNull(place_of_birth)}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>`
@@ -61,7 +89,7 @@ const renderImages = (images, title) => {
     img += `
     <div>
       <img src=${image.large} alt=${title}/>
-      <p>${images[1] ? images[1].caption : ''}</p>
+      <p>${image.caption ? image.caption : ''}</p>
     </div>
     `;
   });

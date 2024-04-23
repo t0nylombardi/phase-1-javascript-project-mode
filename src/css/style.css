@@ -88,9 +88,24 @@ section {
   margin: 0 0 13rem 0;
 }
 
-.card #container .col2 > p {
-  padding: 0.5rem 0;
-  margin: 0;
+.wanted-person-details {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: separate;
+  border-spacing: 2rem 1rem;
+  margin: 0.8rem;
+}
+
+.wanted-person-details tbody {
+  display: table-row-group;
+  height: 100%;
+  vertical-align: middle;
+  unicode-bidi: isolate;
+}
+
+.wanted-person-details tbody tr {
+  display: table-row;
+  margin: 2rem 0;
 }
 
 .card #container .col2 > p > span {
