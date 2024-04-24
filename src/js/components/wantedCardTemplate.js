@@ -1,6 +1,5 @@
 
 export const renderCard = (person) => {
-  const wantedCard = document.getElementById('wantedCard');
   const card = document.createElement('div');
   card.innerHTML = renderHtml(person)
   wantedCard.appendChild(card);
@@ -28,6 +27,7 @@ const renderHtml = (person) => {
       weight_max,
       weight_min,
     } = person;
+
   return `
   <div class="card">
     <h2>${title}</h2>

@@ -24,18 +24,43 @@ import {renderCard} from './components/wantedCardTemplate.js';
 import { loadDB } from './db/index.js';
 import { WantedController } from './controllers/wantedController.js';
 
+const Wanted = new WantedController();
+const wantedCard = document.getElementById('wantedCard');
+
+let search_term = '';
+let wantedPersons;
+
+
 const init = async () => {
   await loadDB();
+  // Load the wanted persons from the server
+  showWanted();
 }
 
-const Wanted = new WantedController();
-const persons = Wanted.getAllPersons();
-persons.then((data) => {
-  data.forEach((item) => {
-    renderCard(item);
-  });
-});
+const fetchWanted = async () => {
+  const response = await fetch('http://localhost:3000/wanted');
+  const data = await response.json();
+  wantedPersons = data;
+}
 
+
+const showWanted = async () => {
+  wantedCard.innerHTML = '';
+  await fetchWanted();
+
+  wantedPersons.filter(
+    wanted => wanted.title.toLowerCase().includes(search_term.toLowerCase())
+  ).forEach(wanted => {
+    renderCard(wanted);
+  });
+}
+
+
+const searchInput = document.getElementById('search');
+searchInput.addEventListener('input', (event) => {
+  search_term = event.target.value;
+  showWanted();
+});
 
 
 
