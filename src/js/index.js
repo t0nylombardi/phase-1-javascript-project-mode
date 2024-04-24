@@ -46,8 +46,11 @@ const fetchWanted = async () => {
 
 const showWanted = async () => {
   wantedCard.innerHTML = '';
+  // Fetch the wanted persons from the server
   await fetchWanted();
 
+  // Show total wanted persons from the server
+  // this will filter the wanted persons that match the search term
   wantedPersons.filter(
     wanted => wanted.title.toLowerCase().includes(search_term.toLowerCase())
   ).forEach(wanted => {
@@ -59,6 +62,7 @@ const showWanted = async () => {
 const searchInput = document.getElementById('search');
 searchInput.addEventListener('input', (event) => {
   search_term = event.target.value;
+  // Show the wanted persons that match the search term
   showWanted();
 });
 

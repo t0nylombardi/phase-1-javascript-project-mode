@@ -11,22 +11,22 @@ const isNull = (value) => {
 
 const renderHtml = (person) => {
   const {
-      age_range,
-      details,
-      description,
-      eyes,
-      hair,
-      height_max,
-      height_min,
-      images,
-      place_of_birth,
-      race,
-      sex,
-      title,
-      url,
-      weight_max,
-      weight_min,
-    } = person;
+    age_range,
+    details,
+    description,
+    eyes,
+    hair,
+    height_max,
+    height_min,
+    images,
+    place_of_birth,
+    race,
+    sex,
+    title,
+    url,
+    weight_max,
+    weight_min,
+  } = person;
 
   return `
   <div class="card">
@@ -80,7 +80,8 @@ const renderHtml = (person) => {
         </table>
       </div>
     </div>
-  </div>`
+    ${renderCardActions(title, url)}
+  </div>`;
 }
 
 const renderImages = (images, title) => {
@@ -106,3 +107,15 @@ const renderElaboration = (details, description) => {
   }
 }
 
+const renderCardActions = (title, url) => {
+  return `
+  <div class="card-actions">
+    <div class="list">
+
+      <a class="wanted-btn" href="https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${url}" target="_blank">X/Twitter</a>
+
+      <a class="wanted-btn" href="https://www.facebook.com/sharer/sharer.php?u=${url}&t=${encodeURIComponent(title)}" target="_blank">FaceBook</a>
+
+      <a class="wanted-btn" href="mailto:?Subject=${encodeURIComponent(title)}&body=${url}" target="_blank">Email</a>
+    </div>`;
+}

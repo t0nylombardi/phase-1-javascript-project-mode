@@ -4,18 +4,15 @@
   --color-primary-background: #232339;
   --color-secondary-background: #2C2C4A;
   --color-primary-text: #f8f8f8;
-  --color-secondary-text: #f8f8f8;
+  --color-secondary-text: #4e4e4e;
 
 
   --color-primary: #4D5BCE;
   --color-secondary: #43D9AD;
   --color-tertiary: #E99287;
-  --color-quaternary: #F8F8F8;
 
-  --color-primary-light: #6A7BFF;
-  --color-secondary-light: #5BE3C6;
-  --color-tertiary-light: #FFA8A8;
-  --color-quaternary-light: #F8F8F8;
+  --color-primary-light: #5c6efc;
+
 }
 
 body {
@@ -29,7 +26,7 @@ body {
 }
 
 .wanted-container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   margin: 0 auto;
 }
@@ -66,6 +63,8 @@ section {
 }
 
 #wantedCard .card {
+  display: flex;
+  flex-flow: column;
   background-color: var(--color-secondary-background);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -136,6 +135,30 @@ section {
   margin: 2rem 0;
 }
 
+.card-actions {
+  display: flex;
+  justify-content: center;
+  margin: 0 2rem;
+}
+
+.card-actions .list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-actions .list div a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.card-actions .list div a:hover {
+  background-color: #111111;
+}
+
 .card #container .col2 > p > span {
   margin: 0 1rem;
 }
@@ -151,4 +174,22 @@ section {
   /* border-radius: 50%; */
   height: 15rem;
   width: 15rem;
+}
+
+.wanted-btn {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 5px;
+  color: var(--color-primary-text);
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.1s;
+}
+
+.wanted-btn:hover {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-text);
 }
