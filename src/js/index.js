@@ -18,23 +18,22 @@
 
   // 5. Follow good coding practices. Keep your code DRY.
 
-
-
-import {renderCard} from './components/wantedCardTemplate.js';
+import { renderCard } from './components/wantedCardTemplate.js';
 import { loadDB } from './db/index.js';
 import { WantedController } from './controllers/wantedController.js';
 
 const Wanted = new WantedController();
-const wantedCard = document.getElementById('wantedCard');
 
-let search_term = '';
 let wantedPersons;
-
 
 const init = async () => {
   await loadDB();
-  // Load the wanted persons from the server
+
+  // Load the wanted persons from the db
   showWanted();
+
+  const searchInput = document.getElementById('searchbox');
+  searchInput.addEventListener('keyup', handelSearchEvent);
 }
 
 const fetchWanted = async () => {
@@ -43,30 +42,36 @@ const fetchWanted = async () => {
   wantedPersons = data;
 }
 
-
 const showWanted = async () => {
-  wantedCard.innerHTML = '';
   // Fetch the wanted persons from the server
   await fetchWanted();
 
-  // Show total wanted persons from the server
-  // this will filter the wanted persons that match the search term
-  wantedPersons.filter(
-    wanted => wanted.title.toLowerCase().includes(search_term.toLowerCase())
-  ).forEach(wanted => {
+  wantedPersons.forEach(wanted => {
     renderCard(wanted);
+    console.log('rendered card');
+    // wantedPersonDetailEditor(wanted.id);
   });
 }
 
+const handelSearchEvent = (event) => {
+  const cards = document.querySelectorAll('div.card');
+  const searchTerm = event.target.value.trim().toLowerCase();
+  cards.forEach(card => {
+    card.style.display = 'revert';
 
-const searchInput = document.getElementById('search');
-searchInput.addEventListener('input', (event) => {
-  search_term = event.target.value;
-  // Show the wanted persons that match the search term
-  showWanted();
-});
+    if (!card.innerText.toLowerCase().includes(searchTerm)) {
+      card.style.display = 'none';
+    }
+  });
+};
+
+const wantedPersonDetailEditor = (id) => {};
 
 
-
-
-addEventListener('DOMContentLoaded', init);
+if (document.readyState === "loading") {
+  // Loading hasn't finished yet
+  document.addEventListener("DOMContentLoaded", init);
+} else {
+  // `DOMContentLoaded` has already fired
+  init();
+}

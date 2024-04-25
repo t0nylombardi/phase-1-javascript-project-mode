@@ -1,5 +1,7 @@
 
 export const renderCard = (person) => {
+  const wantedCard = document.getElementById('wantedCard');
+
   const card = document.createElement('div');
   card.innerHTML = renderHtml(person)
   wantedCard.appendChild(card);
@@ -11,6 +13,7 @@ const isNull = (value) => {
 
 const renderHtml = (person) => {
   const {
+    id,
     age_range,
     details,
     description,
@@ -29,7 +32,7 @@ const renderHtml = (person) => {
   } = person;
 
   return `
-  <div class="card">
+  <div id="${id}" class="card">
     <h2>${title}</h2>
     <div id="container">
       <div class="col1">
@@ -46,35 +49,35 @@ const renderHtml = (person) => {
           <tbody>
             <tr>
               <td>Age:</td>
-              <td>${isNull(age_range)  }</td>
+              <td id="${id}" name="age" class="detail-value">${isNull(age_range)  }</td>
             </tr>
             <tr>
               <td>Sex:</td>
-              <td>${sex}</td>
+              <td id="${id}" name="sex" class="detail-value">${sex}</td>
             </tr>
             <tr>
               <td>Race:</td>
-              <td>${race}</td>
+              <td id="${id}" name="race" class="detail-value">${race}</td>
             </tr>
             <tr>
               <td>Height:</td>
-              <td>${isNull(height_min)} lbs - ${isNull(height_max)} lbs</td>
+              <td id="${id}" name="height" class="detail-value">${isNull(height_min)} lbs - ${isNull(height_max)} lbs</td>
             </tr>
             <tr>
               <td>Weight:</td>
-              <td>${isNull(weight_min)} lbs - ${isNull(weight_max)} lbs</td>
+              <td id="${id}" name="weight" class="detail-value">${isNull(weight_min)} lbs - ${isNull(weight_max)} lbs</td>
             </tr>
             <tr>
               <td>Eyes:</td>
-              <td>${isNull(eyes)}</td>
+              <td id="${id}" name="eyes" class="detail-value">${isNull(eyes)}</td>
             </tr>
             <tr>
               <td>Hair:</td>
-              <td>${isNull(hair)}</td>
+              <td id="${id}" name="hair" class="detail-value">${isNull(hair)}</td>
             </tr>
             <tr>
-              <td>Weight:</td>
-              <td>${isNull(place_of_birth)}</td>
+              <td>Place Of Birth:</td>
+              <td id="${id}" name="placeOfBirth" class="detail-value">${isNull(place_of_birth)}</td>
             </tr>
           </tbody>
         </table>

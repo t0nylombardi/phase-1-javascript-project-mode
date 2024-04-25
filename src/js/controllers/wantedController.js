@@ -14,10 +14,10 @@ export class WantedController {
   }
 
   /**
-   * Retrieves all wanted people from the server.
+   * Retrieves all wanted persons from the server.
    * @returns {Promise<Array<Object>>} A promise that resolves with an array of person objects.
    */
-  async getAllPersons() {
+  async getAllWantedPersons() {
     try {
       const response = await fetch(`${this.baseUrl}`);
       if (!response.ok) {
@@ -31,7 +31,7 @@ export class WantedController {
   }
 
   /**
-   * Retrieves a specific person by ID from the server.
+   * Retrieves a specific wanted person by ID from the server.
    * @param {number} personId - The ID of the person to retrieve.
    * @returns {Promise<Object>} A promise that resolves with the person object.
    */
@@ -49,11 +49,11 @@ export class WantedController {
   }
 
   /**
-   * Creates a new person on the server.
+   * Creates a new wanted person on the server.
    * @param {Object} person - The person object to create.
    * @returns {Promise<Object>} A promise that resolves with the created person object.
    */
-  async createPerson(person) {
+  async createWantedPerson(person) {
     try {
       const response = await fetch(`${this.baseUrl}`, {
         method: 'POST',
@@ -71,34 +71,32 @@ export class WantedController {
   }
 
   /**
-   * Updates an existing person on the server.
+   * Updates an existing wanted person on the server.
    * @param {number} personId - The ID of the person to update.
    * @param {Object} updatedPersonData - The updated person data.
    * @returns {Promise<Object>} A promise that resolves with the updated person object.
    */
-  async updatePerson(personId, updatedPersonData) {
-    try {
-      const response = await fetch(`${this.baseUrl}/${personId}`, {
+  async updateWantedPerson(personId, updatedPersonData) {
+
+      await fetch(`${this.baseUrl}/${personId}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(updatedPersonData)
+      })
+      .then(response => {
+        if (!response.ok) throw new Error(`Failed to update person with ID ${personId}`);
+      })
+      .catch(error => {
+        console.error(`Error updating person with ID ${personId}:`, error.message);
       });
-      if (!response.ok) {
-        throw new Error(`Failed to update person with ID ${personId}`);
-      }
-      return await response.json();
-    } catch (error) {
-      console.error(`Error updating person with ID ${personId}:`, error.message);
-      throw error;
-    }
   }
 
   /**
-   * Deletes a person from the server.
+   * Deletes a wanted person from the server.
    * @param {number} personId - The ID of the person to delete.
    * @returns {Promise<boolean>} A promise that resolves with a boolean indicating success.
    */
-  async deletePerson(personId) {
+  async deleteWantedPerson(personId) {
     try {
       const response = await fetch(`${this.baseUrl}/${personId}`, {
         method: 'DELETE'

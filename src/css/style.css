@@ -52,7 +52,7 @@ body {
 }
 
 section {
-  width: 50%;
+  width: 60%;
   height: 100vh;
   /* padding: 0 12rem; */
   margin: 0 auto;
@@ -192,4 +192,7 @@ section {
 .wanted-btn:hover {
   background-color: var(--color-primary-light);
   color: var(--color-primary-text);
+}
+.is-hidden {
+  display: none;
 }
