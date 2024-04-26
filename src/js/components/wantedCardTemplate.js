@@ -114,11 +114,8 @@ const renderCardActions = (title, url) => {
   return `
   <div class="card-actions">
     <div class="list">
-
       <a class="wanted-btn" href="https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${url}" target="_blank">X/Twitter</a>
-
       <a class="wanted-btn" href="https://www.facebook.com/sharer/sharer.php?u=${url}&t=${encodeURIComponent(title)}" target="_blank">FaceBook</a>
-
       <a class="wanted-btn" href="mailto:?Subject=${encodeURIComponent(title)}&body=${url}" target="_blank">Email</a>
     </div>`;
 }

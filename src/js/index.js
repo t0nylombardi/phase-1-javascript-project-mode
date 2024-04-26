@@ -46,10 +46,9 @@ const showWanted = async () => {
   // Fetch the wanted persons from the server
   await fetchWanted();
 
-  wantedPersons.forEach(wanted => {
-    renderCard(wanted);
+  wantedPersons.forEach(person => {
+    renderCard(person);
     console.log('rendered card');
-    // wantedPersonDetailEditor(wanted.id);
   });
 }
 
@@ -65,7 +64,6 @@ const handelSearchEvent = (event) => {
   });
 };
 
-const wantedPersonDetailEditor = (id) => {};
 
 
 if (document.readyState === "loading") {
