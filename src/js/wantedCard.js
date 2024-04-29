@@ -1,4 +1,4 @@
-import { WantedController } from '../controllers/wantedController.js';
+import { WantedController } from './controllers/wantedController.js';
 
 const Wanted = new WantedController();
 

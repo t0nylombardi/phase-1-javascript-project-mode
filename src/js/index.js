@@ -18,7 +18,7 @@
 
   // 5. Follow good coding practices. Keep your code DRY.
 
-import { renderCard } from './components/wantedCardTemplate.js';
+import { renderCard } from './wantedCard.js';
 import { loadDB } from './db/index.js';
 import { WantedController } from './controllers/wantedController.js';
 
@@ -32,15 +32,12 @@ const init = async () => {
   // Load the wanted persons from the db
   showWanted();
 
-  const searchInput = document.getElementById('searchbox');
-  searchInput.addEventListener('keyup', handelSearchEvent);
-
+  // Add event listeners
+  document.getElementById('searchbox').addEventListener('keyup', handelSearchEvent);
   document.getElementById('close-modal').addEventListener('click', closeModal);
   // close modals on background click
   document.addEventListener('click', event => {
-    if (event.target.classList.contains('update-modal')) {
-      closeModal();
-    }
+    if (event.target.classList.contains('update-modal')) closeModal()
   });
 }
 
