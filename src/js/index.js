@@ -34,6 +34,14 @@ const init = async () => {
 
   const searchInput = document.getElementById('searchbox');
   searchInput.addEventListener('keyup', handelSearchEvent);
+
+  document.getElementById('close-modal').addEventListener('click', closeModal);
+  // close modals on background click
+  document.addEventListener('click', event => {
+    if (event.target.classList.contains('update-modal')) {
+      closeModal();
+    }
+  });
 }
 
 const fetchWanted = async () => {
@@ -48,7 +56,6 @@ const showWanted = async () => {
 
   wantedPersons.forEach(person => {
     renderCard(person);
-    console.log('rendered card');
   });
 }
 
@@ -64,7 +71,11 @@ const handelSearchEvent = (event) => {
   });
 };
 
-
+// close currently open modal
+const closeModal = () => {
+  document.querySelector('.update-modal').classList.remove('open');
+  document.body.classList.remove('modal-open');
+}
 
 if (document.readyState === "loading") {
   // Loading hasn't finished yet

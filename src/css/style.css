@@ -5,12 +5,9 @@
   --color-secondary-background: #2C2C4A;
   --color-primary-text: #f8f8f8;
   --color-secondary-text: #4e4e4e;
-
-
   --color-primary: #4D5BCE;
   --color-secondary: #43D9AD;
   --color-tertiary: #E99287;
-
   --color-primary-light: #5c6efc;
 
 }
@@ -68,24 +65,37 @@ section {
   background-color: var(--color-secondary-background);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 2rem 5rem;
+  margin: 2rem 0;
   padding: 2rem;
   width: 100%;
 }
 
 .card #container {
   display: flex;
-  flex-flow: row;
+  flex-direction: row-reverse;
+  justify-content: center;
+  flex-shrink: 0;
   padding: 0 2rem;
+  overflow: hidden;
 }
 
 .card #container #wantedCardImages {
-
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: center;
   /* width: 60%; */
   /* margin: 0 3rem; */
+}
+
+.card #container #wantedCardImages p {
+  margin: 1rem 4rem;
+}
+
+#wantedCard .card img {
+  /* border-radius: 50%; */
+  height: 15rem;
+  width: 15rem;
+  margin: 0 4rem;
 }
 
 .card #container #wantedCardElaboration P {
@@ -94,25 +104,24 @@ section {
 }
 
 .card #container #wantedCardElaboration {
-  margin: 0 3rem 0 0;
+  margin: 0 4rem;
   padding: 0;
 }
 
 .card #container .col1 {
+  box-sizing: border-box;
   width: 75%;
-  margin: 0;
-}
-
-.card #container div {
-  margin: 1rem;
+  margin: 0 4rem;
+  flex-grow: 1;
 }
 
 .card #container .col2 {
+  box-sizing: border-box;
   height: 50%;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 0 13rem 0;
 }
 
 .wanted-person-details {
@@ -170,12 +179,6 @@ section {
   /* padding: 2rem; */
 }
 
-#wantedCard .card img {
-  /* border-radius: 50%; */
-  height: 15rem;
-  width: 15rem;
-}
-
 .wanted-btn {
   background-color: var(--color-primary);
   border: none;
@@ -196,3 +199,50 @@ section {
 .is-hidden {
   display: none;
 }
+
+.update-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, .35);
+  padding: 40px;
+  overflow: auto;
+}
+
+.update-modal.open {
+  display: block;
+}
+
+.update-modal-body {
+  width: 50%;
+  padding: 20px;
+  margin: 0 auto;
+  border: var(--color-primary) 2px solid;
+  background-color: var(--color-secondary-background);
+}
+
+.update-modal-body .update-person-details {
+  background-color: var(--color-secondary-background);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+

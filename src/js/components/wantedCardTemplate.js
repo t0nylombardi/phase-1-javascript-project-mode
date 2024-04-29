@@ -1,10 +1,20 @@
+import { WantedController } from '../controllers/wantedController.js';
+
+const Wanted = new WantedController();
 
 export const renderCard = (person) => {
   const wantedCard = document.getElementById('wantedCard');
+  const container = document.createElement('div');
+  container.innerHTML = renderHtml(person)
+  wantedCard.appendChild(container);
 
-  const card = document.createElement('div');
-  card.innerHTML = renderHtml(person)
-  wantedCard.appendChild(card);
+  // Update Listeners
+  document.querySelectorAll('#updateBtn')
+    .forEach(btn => btn.addEventListener('click', handleUpdateEvent));
+
+  // Delete Listeners
+  document.querySelectorAll('#deleteBtn')
+    .forEach(btn => btn.addEventListener('click', handleDeleteEvent));
 }
 
 const isNull = (value) => {
@@ -14,21 +24,11 @@ const isNull = (value) => {
 const renderHtml = (person) => {
   const {
     id,
-    age_range,
     details,
     description,
-    eyes,
-    hair,
-    height_max,
-    height_min,
     images,
-    place_of_birth,
-    race,
-    sex,
     title,
     url,
-    weight_max,
-    weight_min,
   } = person;
 
   return `
@@ -45,42 +45,7 @@ const renderHtml = (person) => {
         </div>
       </div>
       <div class="col2">
-        <table class="wanted-person-details">
-          <tbody>
-            <tr>
-              <td>Age:</td>
-              <td id="${id}" name="age" class="detail-value">${isNull(age_range)  }</td>
-            </tr>
-            <tr>
-              <td>Sex:</td>
-              <td id="${id}" name="sex" class="detail-value">${sex}</td>
-            </tr>
-            <tr>
-              <td>Race:</td>
-              <td id="${id}" name="race" class="detail-value">${race}</td>
-            </tr>
-            <tr>
-              <td>Height:</td>
-              <td id="${id}" name="height" class="detail-value">${isNull(height_min)} lbs - ${isNull(height_max)} lbs</td>
-            </tr>
-            <tr>
-              <td>Weight:</td>
-              <td id="${id}" name="weight" class="detail-value">${isNull(weight_min)} lbs - ${isNull(weight_max)} lbs</td>
-            </tr>
-            <tr>
-              <td>Eyes:</td>
-              <td id="${id}" name="eyes" class="detail-value">${isNull(eyes)}</td>
-            </tr>
-            <tr>
-              <td>Hair:</td>
-              <td id="${id}" name="hair" class="detail-value">${isNull(hair)}</td>
-            </tr>
-            <tr>
-              <td>Place Of Birth:</td>
-              <td id="${id}" name="placeOfBirth" class="detail-value">${isNull(place_of_birth)}</td>
-            </tr>
-          </tbody>
-        </table>
+        ${renderDetails(person)}
       </div>
     </div>
     ${renderCardActions(title, url)}
@@ -91,13 +56,46 @@ const renderImages = (images, title) => {
   let img = '';
   images.slice(0,2).forEach((image) => {
     img += `
-    <div>
+    <div class="image-wrapper">
       <img src=${image.large} alt=${title}/>
       <p>${image.caption ? image.caption : ''}</p>
     </div>
     `;
   });
   return img;
+}
+
+const renderDetails = (person) => {
+   const detailsFromObj = [
+    'age_range',
+    'eyes',
+    'hair',
+    'height_max',
+    'place_of_birth',
+    'race',
+    'sex',
+    'weight_max',
+  ]
+
+  const details = Object.keys(person)
+  .filter(key => detailsFromObj.includes(key))
+  .reduce((obj, key) => {
+    return {...obj, [key]: person[key]};
+  }, {});
+
+  return `
+  <table class="wanted-person-details">
+    <tbody>
+      ${
+        Object.keys(details).map(key => {
+          return `<tr>
+            <td>${key.removeSeparator().capitalize()}</td>
+            <td>${isNull(details[key])}</td>
+          </tr>`;
+        }).join('')
+      }
+    </tbody>
+  </table>`;
 }
 
 const renderElaboration = (details, description) => {
@@ -114,8 +112,44 @@ const renderCardActions = (title, url) => {
   return `
   <div class="card-actions">
     <div class="list">
-      <a class="wanted-btn" href="https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${url}" target="_blank">X/Twitter</a>
-      <a class="wanted-btn" href="https://www.facebook.com/sharer/sharer.php?u=${url}&t=${encodeURIComponent(title)}" target="_blank">FaceBook</a>
-      <a class="wanted-btn" href="mailto:?Subject=${encodeURIComponent(title)}&body=${url}" target="_blank">Email</a>
-    </div>`;
+      <button id="updateBtn" class='wanted-btn'>update</button>
+      <button id="deleteBtn" class='wanted-btn'>delete</button>
+    </div>
+  </div>`;
 }
+
+const handleUpdateEvent = (event) => {
+  const personId = event.target.closest('.card').id;
+  event.preventDefault();
+  const modal = document.querySelector('.update-modal');
+  modal.classList.add('open');
+  document.body.classList.add('update-modal-open');
+
+  // const person = wantedPersons.find(person => person.id === personId);
+
+  // Wanted.updateWantedPerson(personId, person);
+}
+
+const handleDeleteEvent = (event) => {
+  const personId = event.target.parentElement.parentElement.id;
+  console.log('delete', personId);
+  // Wanted.deleteWantedPerson(personId);
+}
+
+const getKeyByValue = (obj, val) => {
+  return Object.keys(obj).find(key => obj[key] === val);
+}
+
+Object.defineProperty(String.prototype, 'capitalize', {
+  value: function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+  },
+  enumerable: false
+});
+
+Object.defineProperty(String.prototype, 'removeSeparator', {
+  value: function() {
+    return this.split('_').filter(Boolean).join(' ');;
+  },
+  enumerable: false
+});

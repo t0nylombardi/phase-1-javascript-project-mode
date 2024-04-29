@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS only -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
   <link rel="stylesheet" type="text/css" href="src/css/style.css">
+  <script type="module" src="src/js/index.js"></script>
   <title>Phase-1 Project</title>
 </head>
 <body>
@@ -24,8 +25,53 @@
     <section>
       <div id="wantedCard"></div>
     </section>
+
+    <div id="update-modal" class="update-modal">
+      <div class="update-modal-body">
+        <h1>A custom modal popup</h1>
+        <form action="" class="update-person-details">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="age">Sex</label>
+            <input type="text" id="sex" name="sex" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="age">Race</label>
+            <input type="text" id="race" name="race" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="age">Height</label>
+            <input type="text" id="height" name="height" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="age">Weight</label>
+            <input type="text" id="weight" name="weight" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="age">Hair</label>
+            <input type="text" id="hair" name="hair" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="age">Place of Birth</label>
+            <input type="text" id="place_of_birth" name="place_of_birth" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="age">Deails</label>
+            <textarea id="details" name="details" class="form-control"></textarea>
+          </div>
+
+
+        </form>
+        <button id="close-modal">Close</button>
+      </div>
+    </div>
   </div>
-  
-  <script type="module" src="src/js/index.js"></script>
 </body>
 </html>
