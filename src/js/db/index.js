@@ -1,3 +1,6 @@
+const currentDate = new Date().toISOString().slice(0, 10); // Get current date in YYYY-MM-DD format
+
+
 /**
  * Fetches data from the specified URL.
  * @param {string} url - The URL to fetch data from.
@@ -23,7 +26,9 @@ const fetchData = async (url) => {
 export const loadDB = async () => {
   try {
     const data = await fetchData('http://localhost:3000/wanted');
-    if (data && data.length === 0) {
+    console.log('Data', data);
+    if (data && data.persons.length === 0) {
+      console.log('fetching data from FBI API...');
       await fetchFbiApi();
     }
     console.log(`${data.length} items loaded from the database.`);
@@ -38,10 +43,28 @@ export const loadDB = async () => {
  */
 const fetchFbiApi = async () => {
   try {
-    const data = await fetchData('https://api.fbi.gov/wanted/v1/list');
-    if (data && data.items) {
-      await Promise.all(data.items.map(PopulateDb));
-      console.log(`${data.items.length} items added to the database.`);
+    const responseData = await fetchData('https://api.fbi.gov/wanted/v1/list');
+
+    // Check if response data is valid and lastUpdated date is not today
+    if (responseData && responseData.lastUpdated !== currentDate) {
+      const totalPages = 4; // only looping through 4 pages of data
+      const fetchPromises = [];
+
+      const timer = ms => new Promise(res => setTimeout(res, ms)); // Timer function to avoid rate limiting
+      for (let page = 1; page <= totalPages; page++) {
+        const uri = `https://api.fbi.gov/wanted/v1/list?page=${page}`;
+        const data = await fetchData(uri);
+        console.log(`Fetched page ${page}: ${data.items.length} items.`);
+        if (data && data.items) {
+          fetchPromises.push(...data.items.map(PopulateDb));
+        }
+        await timer(1000); // Wait for 1 second to avoid rate limiting  (1000ms = 1s)
+      }
+
+      await Promise.all(fetchPromises);
+      console.log(`${fetchPromises.length} items added to the database.`);
+    } else {
+      console.log("Data is up to date.");
     }
   } catch (error) {
     console.error(error);
@@ -72,12 +95,11 @@ const PopulateDb = async (person) => {
       weight_max,
       weight_min,
     } = person;
-    await fetch('http://localhost:3000/wanted', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
+
+    // Construct the request body
+    const requestBody = {
+      lastUpdated: currentDate,
+      persons: {
         age_range,
         details,
         description,
@@ -93,9 +115,28 @@ const PopulateDb = async (person) => {
         url,
         weight_max,
         weight_min,
-      }),
-    });
+      } // Populate persons with the provided person object
+    };
+
+    // Construct the request options
+    const requestOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(requestBody),
+    };
+
+    // Send the request
+    const response = await fetch('http://localhost:3000/wanted', requestOptions);
+
+    // Check if the response is ok
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    console.log('Data sent successfully:', await response.json());
   } catch (error) {
-    console.error(error);
+    console.error('Error sending data:', error);
   }
 };
