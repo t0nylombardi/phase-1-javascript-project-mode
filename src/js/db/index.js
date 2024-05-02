@@ -44,18 +44,19 @@ const fetchFbiApi = async () => {
 
   for (let page = 1; page <= totalPages; page++) {
     const uri = `https://api.fbi.gov/wanted/v1/list?page=${page}`;
-    await fetchData(uri).then((response) => {
-      return response;
-    }).then((data) => {
-      if (data && data.items) {
-        fetchPromises.push(...data.items);
-        data.items.forEach(PopulateDb);
-      }
+    await fetch(uri)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data && data.items) {
+          fetchPromises.push(...data.items);
+          data.items.forEach(PopulateDb);
+        }
     })
     .catch((error) => {
       console.error('Error fetching data:', error);
     });
   }
+  await loadDB();
   console.log(`${fetchPromises.length} items added to the database.`);
 };
 
@@ -94,13 +95,14 @@ const PopulateDb = async (person) => {
   };
 
   // Send the request
-  await fetch('http://localhost:3000/wanted', requestOptions).then((response) => {
-    // Check if the response is ok
-    if (response.status >= 400 && response.status < 600) {
-      throw new Error("Bad response from server");
-    }
-  }).catch((error) => {
-    // Handle errors
+  try {
+    await fetch('http://localhost:3000/wanted', requestOptions)
+      .then((res) => res.json())
+      .catch((error) => {
+      // Handle errors
+      console.error('Error sending data:', error);
+    });
+  } catch (error) {
     console.error('Error sending data:', error);
-  });
+  }
 };

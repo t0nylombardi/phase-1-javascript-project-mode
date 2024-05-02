@@ -4,23 +4,22 @@ import { WantedController } from './controllers/wantedController.js';
 
 const Wanted = new WantedController();
 
-let wantedPersons;
-
 const init = async () => {
   await loadDB();
   showWanted();
   addEventListeners();
 };
 
-const fetchWanted = async () => {
-  const response = await fetch('http://localhost:3000/wanted');
-  return await response.json();
+const showWanted = async () => {
+  console.log('Fetching wanted people...');
+  await fetch('http://localhost:3000/wanted')
+    .then((response) => response.json())
+    .then((data) => data.forEach((person) => renderCard(person)))
+    .catch((error) => {
+      console.error('There has been a problem with your fetch operation:', error);
+    });
 };
 
-const showWanted = async () => {
-  wantedPersons = await fetchWanted();
-  wantedPersons.forEach(renderCard);
-};
 
 const handleSearchEvent = (event) => {
   const searchTerm = event.target.value.trim().toLowerCase();
