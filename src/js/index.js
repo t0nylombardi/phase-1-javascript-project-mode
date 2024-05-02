@@ -33,7 +33,7 @@ const handleSearchEvent = (event) => {
 };
 
 const closeModal = () => {
-  const modal = document.querySelector('.update-modal');
+  const modal = document.querySelector('.modal');
   if (modal) {
     modal.classList.remove('open');
     document.body.classList.remove('modal-open');
@@ -44,7 +44,7 @@ const addEventListeners = () => {
   document.getElementById('searchbox').addEventListener('keyup', handleSearchEvent);
   document.getElementById('close-modal').addEventListener('click', closeModal);
   document.addEventListener('click', event => {
-    if (event.target.classList.contains('update-modal')) closeModal();
+    if (event.target.classList.contains('.modal')) closeModal();
   });
 };
 

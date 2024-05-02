@@ -41,7 +41,9 @@ const renderHtml = (person) => {
 
   return `
   <div id="${id}" class="card">
-    <h2>${title}</h2>
+    <h2>
+      <a href=${url} target="_blank">${title}</a>
+    </h2>
     <div id="container">
       <div class="col1">
         <div id="wantedCardImages">
@@ -49,7 +51,6 @@ const renderHtml = (person) => {
         </div>
         <div id="wantedCardElaboration">
           ${renderElaboration(details, description)}
-          <a href=${url} target="_blank">More Info</a>
         </div>
       </div>
       <div class="col2">
@@ -118,6 +119,9 @@ const renderDetails = (person) => {
  * @returns {string} The HTML structure for the elaboration section.
  */
 const renderElaboration = (details, description) => {
+  details = details ? details.split('<p></p>').join('') : '';
+  description = description ? description.split('<p></p>').join('') : '';
+
   return details ? `<p>${details}</p>` : description ? `<p>${description}</p>` : '<p>No Details Available</p>';
 };
 
@@ -142,10 +146,10 @@ const renderCardActions = () => {
 const handleUpdateEvent = (event) => {
   const personId = event.target.closest('.card').id;
   event.preventDefault();
-  const modal = document.querySelector('.update-modal');
+  const modal = document.querySelector('.modal');
   if (modal) {
     modal.classList.add('open');
-    document.body.classList.add('update-modal-open');
+    document.body.classList.add('modal-open');
   }
   // const person = wantedPersons.find(person => person.id === personId);
   // Wanted.updateWantedPerson(personId, person);

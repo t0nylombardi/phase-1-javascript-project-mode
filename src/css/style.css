@@ -6,11 +6,29 @@
   --color-primary-text: #f8f8f8;
   --color-secondary-text: #4e4e4e;
   --color-primary: #4D5BCE;
-  --color-secondary: #43D9AD;
-  --color-tertiary: #E99287;
   --color-primary-light: #5c6efc;
-
+  --color-secondary: #43D9AD;
+  --color-secondary-light: #48eebc;
+  --color-tertiary: #E99287;
+  --color-tertiary-dark: #bf8f8a;
 }
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+a {
+  color: var(--color-secondary);
+  background-color: transparent;
+  text-decoration: none;
+  margin: 2rem 4rem;
+  padding: 0;
+}
+
+a:hover, a:focus {
+  color: var(--color-secondary-light);
+  text-decoration: underline;
+}
+
 
 body {
   background-color: var(--color-primary-background);
@@ -18,6 +36,9 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
   margin: 0;
   padding: 0;
 }
@@ -76,30 +97,31 @@ section {
   justify-content: center;
   flex-shrink: 0;
   padding: 0 2rem;
+  margin: 0 0 4rem 0;
   overflow: hidden;
 }
 
 .card #container #wantedCardImages {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   /* width: 60%; */
   /* margin: 0 3rem; */
 }
 
 .card #container #wantedCardImages p {
-  margin: 1rem 4rem;
+  margin: 1rem 0;
 }
 
 #wantedCard .card img {
   /* border-radius: 50%; */
   height: 15rem;
   width: 15rem;
-  margin: 0 4rem;
+  /* margin: 0 4rem; */
 }
 
-.card #container #wantedCardElaboration P {
-  margin: 0;
+.card #container #wantedCardElaboration p, a {
+  margin: 0.5rem 2rem;
   padding: 0;
 }
 
@@ -180,7 +202,7 @@ section {
 }
 
 .wanted-btn {
-  background-color: var(--color-primary);
+  background-color: var(--color-tertiary);
   border: none;
   border-radius: 5px;
   color: var(--color-primary-text);
@@ -193,14 +215,10 @@ section {
 }
 
 .wanted-btn:hover {
-  background-color: var(--color-primary-light);
-  color: var(--color-primary-text);
-}
-.is-hidden {
-  display: none;
+  background-color: var(--color-tertiary-dark);
 }
 
-.update-modal {
+.modal {
   display: none;
   position: fixed;
   inset: 0;
@@ -210,20 +228,32 @@ section {
   overflow: auto;
 }
 
-.update-modal.open {
+.modal.open {
   display: block;
 }
 
-.update-modal-body {
-  width: 50%;
+.modal-body {
+  position: relative;
+  width: 25%;
   padding: 20px;
   margin: 0 auto;
   border: var(--color-primary) 2px solid;
   background-color: var(--color-secondary-background);
 }
 
-.update-modal-body .update-person-details {
+.modal-body .person-details-form {
   background-color: var(--color-secondary-background);
+}
+
+#close-modal {
+  background-color: transparent;
+  border: none;
+  font-size: larger;
+  cursor: pointer;
+  color: var(--color-primary-text);
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .form-group {
@@ -245,4 +275,6 @@ section {
   border-radius: .25rem;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+
+.person-details
 
