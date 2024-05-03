@@ -1,62 +1,6 @@
 {
   "wanted": [
     {
-      "id": "ef7b",
-      "age_range": null,
-      "details": "<p>Abd al Rahman al Maghrebi, a Moroccan born national, is wanted for questioning in connection with his membership in Al Qaeda, an organization known for committing acts of terrorism against the United States.  Al Maghrebi reportedly studied software programming in Germany before travelling to Afghanistan where he was selected to manage Al Sahab, Al Qaeda’s primary media wing.  Following the events of September 11, 2001, Al Maghrebi fled to Iran and possibly travels between Iran and Pakistan.  Al Maghrebi has been designated by the United States Government as a senior leader of Al Qaeda.</p>\r\n<p> </p>",
-      "description": "",
-      "eyes": null,
-      "hair": null,
-      "height_max": 84,
-      "height_min": 68,
-      "images": [
-        {
-          "thumb": "https://www.fbi.gov/wanted/terrorinfo/abd-al-rahman-al-maghrebi/@@images/image/thumb",
-          "original": "https://www.fbi.gov/wanted/terrorinfo/abd-al-rahman-al-maghrebi/@@images/image",
-          "caption": null,
-          "large": "https://www.fbi.gov/wanted/terrorinfo/abd-al-rahman-al-maghrebi/@@images/image/large"
-        }
-      ],
-      "place_of_birth": "Morocco",
-      "race": null,
-      "sex": "Male",
-      "title": "ABD AL RAHMAN AL MAGHREBI",
-      "url": "https://www.fbi.gov/wanted/terrorinfo/abd-al-rahman-al-maghrebi",
-      "weight_max": null,
-      "weight_min": null
-    },
-    {
-      "id": "005a",
-      "age_range": "6 years old (at time of disappearance)",
-      "details": "<p>Jesus de la Cruz was last seen on September 28, 1996, walking on Park Street near his residence in Lynn, Massachusetts. He was six years old at the time of his disappearance and has not been seen since. De la Cruz has a scar above his left eye, birthmarks on his left calf and the left side of his forehead, and his left ear is pierced. He was last seen wearing a white t-shirt, blue jeans, and brown and yellow boots.</p>\r\n<p> </p>",
-      "description": "September 28, 1996\r\nLynn, Massachusetts",
-      "eyes": "brown",
-      "hair": "brown",
-      "height_max": 54,
-      "height_min": 54,
-      "images": [
-        {
-          "thumb": "https://www.fbi.gov/wanted/vicap/missing-persons/jesus-de-la-cruz---lynn-massachusetts/@@images/image/thumb",
-          "original": "https://www.fbi.gov/wanted/vicap/missing-persons/jesus-de-la-cruz---lynn-massachusetts/@@images/image",
-          "caption": "Photograph taken at Time of Disappearance",
-          "large": "https://www.fbi.gov/wanted/vicap/missing-persons/jesus-de-la-cruz---lynn-massachusetts/@@images/image/large"
-        },
-        {
-          "thumb": "https://www.fbi.gov/wanted/vicap/missing-persons/jesus-de-la-cruz---lynn-massachusetts/delacruzage.jpg/@@images/image/thumb",
-          "original": "https://www.fbi.gov/wanted/vicap/missing-persons/jesus-de-la-cruz---lynn-massachusetts/delacruzage.jpg",
-          "caption": "Photograph Age Progressed to 31 Years Old",
-          "large": "https://www.fbi.gov/wanted/vicap/missing-persons/jesus-de-la-cruz---lynn-massachusetts/delacruzage.jpg/@@images/image/large"
-        }
-      ],
-      "place_of_birth": null,
-      "race": "hispanic",
-      "sex": "Male",
-      "title": "JESUS DE LA CRUZ - LYNN, MASSACHUSETTS",
-      "url": "https://www.fbi.gov/wanted/vicap/missing-persons/jesus-de-la-cruz---lynn-massachusetts",
-      "weight_max": 60,
-      "weight_min": 60
-    },
-    {
       "id": "b56d",
       "age_range": null,
       "details": null,
@@ -358,37 +302,6 @@
       "url": "https://www.fbi.gov/wanted/vicap/unidentified-persons/john-doe---waterloo-township-michigan",
       "weight_max": 145,
       "weight_min": 114
-    },
-    {
-      "id": "34be",
-      "age_range": null,
-      "details": "<p>On August 30, 1979, Elsie Eldora Luscier, accompanied by her cousin, <a data-linktype=\"external\" href=\"https://www.fbi.gov/wanted/kidnap/carlotta-maria-sanchez\" data-val=\"https://www.fbi.gov/wanted/kidnap/carlotta-maria-sanchez\" data-urltype=\"/view\">Carlotta Maria Sanchez</a>, disappeared from Taholah, Washington, which is in the Quinault Nation Indian Reservation.  The FBI is seeking information about the disappearance of both girls, and about those responsible for their disappearance.</p>\r\n<p> </p>",
-      "description": "August 30, 1979\r\nTaholah, Washington",
-      "eyes": "brown",
-      "hair": "brown",
-      "height_max": 61,
-      "height_min": 61,
-      "images": [
-        {
-          "thumb": "https://www.fbi.gov/wanted/kidnap/elsie-eldora-luscier/@@images/image/thumb",
-          "original": "https://www.fbi.gov/wanted/kidnap/elsie-eldora-luscier/@@images/image",
-          "caption": null,
-          "large": "https://www.fbi.gov/wanted/kidnap/elsie-eldora-luscier/@@images/image/large"
-        },
-        {
-          "thumb": "https://www.fbi.gov/wanted/kidnap/elsie-eldora-luscier/luscier2.jpg/@@images/image/thumb",
-          "original": "https://www.fbi.gov/wanted/kidnap/elsie-eldora-luscier/luscier2.jpg",
-          "caption": "Enhanced Image",
-          "large": "https://www.fbi.gov/wanted/kidnap/elsie-eldora-luscier/luscier2.jpg/@@images/image/large"
-        }
-      ],
-      "place_of_birth": null,
-      "race": null,
-      "sex": "Female",
-      "title": "ELSIE ELDORA LUSCIER",
-      "url": "https://www.fbi.gov/wanted/kidnap/elsie-eldora-luscier",
-      "weight_max": 110,
-      "weight_min": 110
     },
     {
       "id": "6875",

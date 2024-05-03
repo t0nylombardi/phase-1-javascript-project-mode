@@ -126,8 +126,8 @@ const renderCardActionsHtml = () => {
   return `
     <div class="card-actions">
       <div class="list">
-        <button id="updateBtn" class="wanted-btn">update</button>
-        <button id="deleteBtn" class="wanted-btn">delete</button>
+        <button id="updateBtn" class="btn">update</button>
+        <button id="deleteBtn" class="btn">delete</button>
       </div>
     </div>`;
 };
@@ -165,21 +165,30 @@ function handleDeleteEvent(event) {
  * @param {string} personId - The id of the person to delete.
  */
 const renderAlert = (personId) => {
-  const alert = document.createElement('div');
-  alert.classList.add('alert');
-  alert.innerHTML = `
-    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-    <strong>Danger, Will Robinson!</strong> Are you sure you want to delete this person?
-    <div class="alert-actions">
-      <button class="alert-btn cancel">Cancel</button>
-      <button class="alert-btn delete">Delete</button>
-    </div>
-  `;
-  document.body.appendChild(alert);
-  document.querySelectorAll('.alert-btn').forEach(btn => {
-    btn.addEventListener('click', handleAlertEvent(personId));
-  });
+  // check to see if an alert already exists
+  const oldAlert = document.querySelector('.alert');
+  if (oldAlert) oldAlert.remove();
+
+  Wanted.getWantedPersonById(personId)
+    .then(person => {
+      const alert = document.createElement('div');
+      alert.classList.add('alert');
+      alert.innerHTML = `
+        <strong>Danger, Will Robinson!</strong><br>
+        Are you sure you want to delete ${person.title.split('-')[0]} ?
+        <div class="alert-actions">
+          <button class="btn alert-btn cancel">Cancel</button>
+          <button class="btn alert-btn btn-danger delete">Delete</button>
+        </div>
+      `;
+      document.body.appendChild(alert);
+      document.querySelectorAll('.alert-btn').forEach(btn => {
+        btn.addEventListener('click', handleAlertEvent(person.id));
+      });
+    })
 };
+
+
 
 /**
  * Handles the alert event for a wanted person card.

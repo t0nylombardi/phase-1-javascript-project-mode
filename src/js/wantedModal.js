@@ -64,7 +64,7 @@ const createForm = (person, detailsToRender) => {
   return `
     <form class="person-details-form">
       ${renderFormElements(details)}
-      <button class="wanted-btn" type="submit">Submit</button>
+      <button class="btn" type="submit">Submit</button>
     </form>
   `;
 };
