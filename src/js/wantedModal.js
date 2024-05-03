@@ -56,7 +56,7 @@ const renderForm = (person, detailsObj) => {
               value="${isNull(details[key])}">
           </div>
         `).join('')}
-        <button type="submit">Update</button>
+        <button class="wanted-btn" type="submit">Submit</button>
       </form>
     `;
 }

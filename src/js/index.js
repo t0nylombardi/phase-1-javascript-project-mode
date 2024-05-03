@@ -40,7 +40,7 @@ const closeModal = () => {
   const modalContent = document.querySelector('.modal-content');
 
   if (modal) {
-    modalContent.innerHTML = '';
+    modalContent.remove();
     modal.classList.remove('open');
     document.body.classList.remove('modal-open');
   }
