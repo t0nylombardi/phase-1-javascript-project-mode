@@ -1,16 +1,44 @@
+// As a user, I want the application to load properly
+// when I open it so that I can use it smoothly.
+// Feature: Initialize Application
+
+// As a user, I want to see a list of wanted people displayed
+// when I open the application so that I can know who is wanted.
+// Feature: Show Wanted People
+
+// As a user, I want to search for specific people in the
+// wanted list so that I can find them quickly.
+// Feature: Handle Search Event
+
+// As a user, I want the application to respond to my interactions,
+// like typing in the search box or clicking on buttons, so that I can use it easily.
+// Feature: Add Event Listeners
+
+// As a user, I want to be able to customize strings easily,
+// like making the first letter uppercase or removing certain characters,
+// so that I can format text the way I want.
+// Feature: Prototype Methods
+
+
 import { renderCard } from './wantedCard.js';
-import { renderModal } from './wantedModal.js';
 import { loadDB } from './db/db.js';
-import { WantedController } from './controllers/wantedController.js';
 
-const Wanted = new WantedController();
-
+/**
+ * Initializes the application.
+ * @function init
+ * @returns {void}
+ */
 const init = async () => {
   await loadDB();
   showWanted();
   addEventListeners();
 };
 
+/**
+ * Fetches wanted people from the server and renders them.
+ * @function showWanted
+ * @returns {void}
+ */
 const showWanted = async () => {
   console.log('Fetching wanted people...');
   await fetch('http://localhost:3000/wanted')
@@ -23,7 +51,6 @@ const showWanted = async () => {
     });
 };
 
-
 const handleSearchEvent = (event) => {
   const searchTerm = event.target.value.trim().toLowerCase();
   const cards = document.querySelectorAll('div.card');
@@ -35,25 +62,15 @@ const handleSearchEvent = (event) => {
   });
 };
 
-const closeModal = () => {
-  const modal = document.querySelector('.modal');
-  const modalContent = document.querySelector('.modal-content');
-
-  if (modal) {
-    modalContent.remove();
-    modal.classList.remove('open');
-    document.body.classList.remove('modal-open');
-  }
-};
-
+/**
+ * Adds event listeners to the search box and modal.
+ * @function addEventListeners
+ * @returns {void}
+ * @listens searchbox:keyup
+ * @listens document:click
+ */
 const addEventListeners = () => {
   document.getElementById('searchbox').addEventListener('keyup', handleSearchEvent);
-  document.getElementById('close-modal').addEventListener('click', closeModal);
-  document.addEventListener('click', event => {
-    if (event.target.classList.contains('modal') || event.target.id === 'close-modal') {
-      closeModal();
-    }
-  });
 };
 
 // Define prototype methods

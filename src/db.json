@@ -1,44 +1,88 @@
 {
   "wanted": [
     {
-      "id": "b56d",
-      "age_range": null,
-      "details": null,
-      "description": "Conspiracy to Commit Wire Fraud; Wire Fraud",
-      "eyes": "brown",
-      "hair": null,
-      "height_max": 64,
-      "height_min": 64,
+      "id": "584f",
+      "age_range": "42",
+      "details": "<p>Abd al Rahman al Maghrebi, a Moroccan born national, is wanted for questioning in connection with his membership in Al Qaeda, an organization known for committing acts of terrorism against the United States.  Al Maghrebi reportedly studied software programming in Germany before travelling to Afghanistan where he was selected to manage Al Sahab, Al Qaeda’s primary media wing.  Following the events of September 11, 2001, Al Maghrebi fled to Iran and possibly travels between Iran and Pakistan.  Al Maghrebi has been designated by the United States Government as a senior leader of Al Qaeda.</p>\r\n<p> </p>",
+      "description": "",
+      "eyes": "blue",
+      "hair": "black",
+      "height_max": "80",
+      "height_min": 68,
       "images": [
         {
-          "thumb": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas/@@images/image/thumb",
-          "original": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas/@@images/image",
-          "caption": "Photograph taken in approximately 2010",
-          "large": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas/@@images/image/large"
-        },
-        {
-          "thumb": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas/regina-thomas2.png/@@images/image/thumb",
-          "original": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas/regina-thomas2.png",
-          "caption": "Photograph taken in 2015",
-          "large": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas/regina-thomas2.png/@@images/image/large"
-        },
-        {
-          "thumb": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas/regina-thomas3.png/@@images/image/thumb",
-          "original": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas/regina-thomas3.png",
-          "caption": "",
-          "large": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas/regina-thomas3.png/@@images/image/large"
+          "thumb": "https://www.fbi.gov/wanted/terrorinfo/abd-al-rahman-al-maghrebi/@@images/image/thumb",
+          "original": "https://www.fbi.gov/wanted/terrorinfo/abd-al-rahman-al-maghrebi/@@images/image",
+          "caption": null,
+          "large": "https://www.fbi.gov/wanted/terrorinfo/abd-al-rahman-al-maghrebi/@@images/image/large"
         }
       ],
-      "place_of_birth": "Texas",
-      "race": "black",
-      "sex": "Female",
-      "title": "REGINA LYNN THOMAS",
-      "url": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas",
-      "weight_max": 223,
-      "weight_min": 223
+      "place_of_birth": "Morocco",
+      "race": "N/A",
+      "sex": "Male",
+      "title": "ABD AL RAHMAN AL MAGHREBI",
+      "url": "https://www.fbi.gov/wanted/terrorinfo/abd-al-rahman-al-maghrebi",
+      "weight_max": "N/A",
+      "weight_min": null
     },
     {
-      "id": "763d",
+      "id": "9900",
+      "age_range": null,
+      "details": null,
+      "description": "Conspiracy to Defraud the United States; Conspiracy to Violate the International Emergency Economic Powers Act (IEEPA); Bank Fraud Conspiracy; Wire Fraud Conspiracy; Wire Fraud; Money Laundering Conspiracy; Money Laundering; Conspiracy to Violate the Export Control Reform Act (ECRA); Smuggling Goods from the United States; Failure to File Electronic Export Information",
+      "eyes": null,
+      "hair": "black",
+      "height_max": null,
+      "height_min": null,
+      "images": [
+        {
+          "thumb": "https://www.fbi.gov/wanted/counterintelligence/boris-yakovlevich-livshits/@@images/image/thumb",
+          "original": "https://www.fbi.gov/wanted/counterintelligence/boris-yakovlevich-livshits/@@images/image",
+          "caption": null,
+          "large": "https://www.fbi.gov/wanted/counterintelligence/boris-yakovlevich-livshits/@@images/image/large"
+        }
+      ],
+      "place_of_birth": "Leningrad, Russia",
+      "race": "white",
+      "sex": "Male",
+      "title": "BORIS YAKOVLEVICH LIVSHITS",
+      "url": "https://www.fbi.gov/wanted/counterintelligence/boris-yakovlevich-livshits",
+      "weight_max": null,
+      "weight_min": null
+    },
+    {
+      "id": "7ec8",
+      "age_range": "6 years old (at time of disappearance)",
+      "details": "<p>Jesus de la Cruz was last seen on September 28, 1996, walking on Park Street near his residence in Lynn, Massachusetts. He was six years old at the time of his disappearance and has not been seen since. De la Cruz has a scar above his left eye, birthmarks on his left calf and the left side of his forehead, and his left ear is pierced. He was last seen wearing a white t-shirt, blue jeans, and brown and yellow boots.</p>\r\n<p> </p>",
+      "description": "September 28, 1996\r\nLynn, Massachusetts",
+      "eyes": "brown",
+      "hair": "brown",
+      "height_max": 54,
+      "height_min": 54,
+      "images": [
+        {
+          "thumb": "https://www.fbi.gov/wanted/vicap/missing-persons/jesus-de-la-cruz---lynn-massachusetts/@@images/image/thumb",
+          "original": "https://www.fbi.gov/wanted/vicap/missing-persons/jesus-de-la-cruz---lynn-massachusetts/@@images/image",
+          "caption": "Photograph taken at Time of Disappearance",
+          "large": "https://www.fbi.gov/wanted/vicap/missing-persons/jesus-de-la-cruz---lynn-massachusetts/@@images/image/large"
+        },
+        {
+          "thumb": "https://www.fbi.gov/wanted/vicap/missing-persons/jesus-de-la-cruz---lynn-massachusetts/delacruzage.jpg/@@images/image/thumb",
+          "original": "https://www.fbi.gov/wanted/vicap/missing-persons/jesus-de-la-cruz---lynn-massachusetts/delacruzage.jpg",
+          "caption": "Photograph Age Progressed to 31 Years Old",
+          "large": "https://www.fbi.gov/wanted/vicap/missing-persons/jesus-de-la-cruz---lynn-massachusetts/delacruzage.jpg/@@images/image/large"
+        }
+      ],
+      "place_of_birth": null,
+      "race": "hispanic",
+      "sex": "Male",
+      "title": "JESUS DE LA CRUZ - LYNN, MASSACHUSETTS",
+      "url": "https://www.fbi.gov/wanted/vicap/missing-persons/jesus-de-la-cruz---lynn-massachusetts",
+      "weight_max": 60,
+      "weight_min": 60
+    },
+    {
+      "id": "6e7a",
       "age_range": "21 years old at time of disappearance",
       "details": "<p>Ida Dean (Richardson) Anderson, a 21-year-old white female, was last seen on September 18, 1958, in Ann Arbor, Michigan. She was due in court the next day for her parental rights case and was to be awarded custody of her children, but due to conflicting court documents it is unclear if she showed up. Ida had left her husband in March 1958 and was hospitalized soon after for various illnesses. As a result, her estranged husband placed their children in a boarding home and moved to Chicago while Ida was in the hospital. The state of Michigan took custody of the children and Ida had been fighting to get them back since she was released. Arrangements had been made for Ida and her children to fly to Florida to visit family after the September 19, 1958, court date but she did not show. Prior to her disappearance, Ida remained in constant contact with her family via mail. Anyone with information regarding Ida’s disappearance is asked to contact the Ann Arbor Police Department.</p>",
       "description": "September 18, 1958\r\nAnn Arbor, Michigan",
@@ -75,7 +119,44 @@
       "weight_min": 110
     },
     {
-      "id": "ffbb",
+      "id": "941b",
+      "age_range": null,
+      "details": null,
+      "description": "Conspiracy to Commit Wire Fraud; Wire Fraud",
+      "eyes": "brown",
+      "hair": null,
+      "height_max": 64,
+      "height_min": 64,
+      "images": [
+        {
+          "thumb": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas/@@images/image/thumb",
+          "original": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas/@@images/image",
+          "caption": "Photograph taken in approximately 2010",
+          "large": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas/@@images/image/large"
+        },
+        {
+          "thumb": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas/regina-thomas2.png/@@images/image/thumb",
+          "original": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas/regina-thomas2.png",
+          "caption": "Photograph taken in 2015",
+          "large": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas/regina-thomas2.png/@@images/image/large"
+        },
+        {
+          "thumb": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas/regina-thomas3.png/@@images/image/thumb",
+          "original": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas/regina-thomas3.png",
+          "caption": "",
+          "large": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas/regina-thomas3.png/@@images/image/large"
+        }
+      ],
+      "place_of_birth": "Texas",
+      "race": "black",
+      "sex": "Female",
+      "title": "REGINA LYNN THOMAS",
+      "url": "https://www.fbi.gov/wanted/wcc/regina-lynn-thomas",
+      "weight_max": 223,
+      "weight_min": 223
+    },
+    {
+      "id": "2674",
       "age_range": null,
       "details": null,
       "description": "Escape; Felon in Possession of  Firearm and Ammunition; Possession of a Stolen Firearm",
@@ -106,7 +187,7 @@
       "weight_min": 196
     },
     {
-      "id": "8024",
+      "id": "d4fe",
       "age_range": null,
       "details": null,
       "description": "Securities Fraud",
@@ -149,32 +230,7 @@
       "weight_min": 265
     },
     {
-      "id": "02e3",
-      "age_range": null,
-      "details": null,
-      "description": "Conspiracy to Defraud the United States; Conspiracy to Violate the International Emergency Economic Powers Act (IEEPA); Bank Fraud Conspiracy; Wire Fraud Conspiracy; Wire Fraud; Money Laundering Conspiracy; Money Laundering; Conspiracy to Violate the Export Control Reform Act (ECRA); Smuggling Goods from the United States; Failure to File Electronic Export Information",
-      "eyes": null,
-      "hair": "black",
-      "height_max": null,
-      "height_min": null,
-      "images": [
-        {
-          "thumb": "https://www.fbi.gov/wanted/counterintelligence/boris-yakovlevich-livshits/@@images/image/thumb",
-          "original": "https://www.fbi.gov/wanted/counterintelligence/boris-yakovlevich-livshits/@@images/image",
-          "caption": null,
-          "large": "https://www.fbi.gov/wanted/counterintelligence/boris-yakovlevich-livshits/@@images/image/large"
-        }
-      ],
-      "place_of_birth": "Leningrad, Russia",
-      "race": "white",
-      "sex": "Male",
-      "title": "BORIS YAKOVLEVICH LIVSHITS",
-      "url": "https://www.fbi.gov/wanted/counterintelligence/boris-yakovlevich-livshits",
-      "weight_max": null,
-      "weight_min": null
-    },
-    {
-      "id": "2089",
+      "id": "b81e",
       "age_range": null,
       "details": "<p>On November 5, 2023, the Huyen Trang Temple located at 17505 FM 1485, New Caney, Texas, was vandalized by arson. At approximately 9:42 p.m., an unknown male suspect approached the temple and found an open window at the front of the temple. The unknown suspect then ignited the top of a gas-filled mason jar with fire and threw it into the temple, starting a fire in the main place of worship where a monk was asleep on the floor. The unknown suspect then fled the scene, and the monks that were sleeping in the temple extinguished the fire with no serious injuries.</p>\r\n<p> </p>",
       "description": "New Caney, Texas\r\nNovember 5, 2023",
@@ -211,7 +267,7 @@
       "weight_min": null
     },
     {
-      "id": "8e97",
+      "id": "4765",
       "age_range": "36 years old (at time of disappearance)",
       "details": "<p>Bryan McGehrin was last seen at his mother’s residence on October 25, 2019, in Taneytown, Maryland.  When he left her residence, he did not say where he was going.  He was released from jail in Hagerstown, Maryland, two days prior.  McGehrin does not have a cell phone but would historically make contact with his family using his friends’ phones.  McGehrin has depression and was not taking medication for it.  He was supposed to attend a probation meeting but missed it. If you have any information regarding this investigation, please contact the Westminster Police Department.</p>\r\n<p> </p>",
       "description": "October 25, 2019\r\nTaneytown, Maryland",
@@ -248,7 +304,7 @@
       "weight_min": 190
     },
     {
-      "id": "fbc0",
+      "id": "b0da",
       "age_range": "Approximately 22 years old",
       "details": "<p>Jefferson County Sheriff’s Office in Colorado is seeking assistance from the public to locate Mitchell Todd Hein. Hein visited family in Jefferson County, Colorado, in December of 1982 and abruptly left in January or February of 1983 without saying goodbye to anyone. He was carrying his clothes and belongings in a black trash bag. According to a friend, Hein showed up in Clinton, Oklahoma, and then in early March 1983, Hein hitched a ride with the friend's father to California. They stopped for the night in Indio, California. Hein left the hotel room and has not been seen or heard from since. It was reported that Hein had thrown away his driver's license and social security card and may have had no form of identification on him.</p>",
       "description": "Indio, California\r\nFebruary 1, 1983",
@@ -273,7 +329,7 @@
       "weight_min": 170
     },
     {
-      "id": "f116",
+      "id": "ef68",
       "age_range": "20 to 45 years old",
       "details": "<p>On Wednesday, August 30, 1978, the skeletal remains of a black male dressed in women’s clothing and a wig were found bound and wrapped in plastic trash bags. The male had a right shoulder surgical implantation of two large staples into the lateral aspect of greater tubercle of the right humerus and a 32 mm (1 ¼”) screw into the anterior border of glenoid fossa of the right scapula. He was missing 10 teeth to include his two upper front teeth and there was evidence of a healed nasal fracture. The cause of death could not be determined; however, based on how the body was found this case is considered a homicide. The Michigan State Police (MSP) Violent Crimes Unit (VCU) is requesting assistance with identifying this male and any similar cases.</p>",
       "description": "August 30, 1978 \r\nWaterloo Township, Michigan",
@@ -304,7 +360,38 @@
       "weight_min": 114
     },
     {
-      "id": "6875",
+      "id": "c624",
+      "age_range": null,
+      "details": "<p>On August 30, 1979, Elsie Eldora Luscier, accompanied by her cousin, <a data-linktype=\"external\" href=\"https://www.fbi.gov/wanted/kidnap/carlotta-maria-sanchez\" data-val=\"https://www.fbi.gov/wanted/kidnap/carlotta-maria-sanchez\" data-urltype=\"/view\">Carlotta Maria Sanchez</a>, disappeared from Taholah, Washington, which is in the Quinault Nation Indian Reservation.  The FBI is seeking information about the disappearance of both girls, and about those responsible for their disappearance.</p>\r\n<p> </p>",
+      "description": "August 30, 1979\r\nTaholah, Washington",
+      "eyes": "brown",
+      "hair": "brown",
+      "height_max": 61,
+      "height_min": 61,
+      "images": [
+        {
+          "thumb": "https://www.fbi.gov/wanted/kidnap/elsie-eldora-luscier/@@images/image/thumb",
+          "original": "https://www.fbi.gov/wanted/kidnap/elsie-eldora-luscier/@@images/image",
+          "caption": null,
+          "large": "https://www.fbi.gov/wanted/kidnap/elsie-eldora-luscier/@@images/image/large"
+        },
+        {
+          "thumb": "https://www.fbi.gov/wanted/kidnap/elsie-eldora-luscier/luscier2.jpg/@@images/image/thumb",
+          "original": "https://www.fbi.gov/wanted/kidnap/elsie-eldora-luscier/luscier2.jpg",
+          "caption": "Enhanced Image",
+          "large": "https://www.fbi.gov/wanted/kidnap/elsie-eldora-luscier/luscier2.jpg/@@images/image/large"
+        }
+      ],
+      "place_of_birth": null,
+      "race": null,
+      "sex": "Female",
+      "title": "ELSIE ELDORA LUSCIER",
+      "url": "https://www.fbi.gov/wanted/kidnap/elsie-eldora-luscier",
+      "weight_max": 110,
+      "weight_min": 110
+    },
+    {
+      "id": "fb0c",
       "age_range": null,
       "details": "<p>On December 11, 2020, 23-year-old Dhulfiqar Kareem Mseer was working as an Uber driver.  Shortly before midnight, he arrived in the area of NE Stafford Street and NE 11th Avenue in Portland, Oregon, to pick up a fare.  He was shot by multiple subjects who fired approximately 70 rounds.  He died several days later.  The subjects got into two cars before leaving the area.  One of the cars is believed to be a VW Eos.  Shell casings recovered at the scene have been matched to casings found at other gang-involved shootings in the area.</p>\r\n<p> </p>",
       "description": "Homicide Victim\r\nPortland, Oregon\r\nDecember 11, 2020",
@@ -329,7 +416,7 @@
       "weight_min": null
     },
     {
-      "id": "e021",
+      "id": "4e3e",
       "age_range": null,
       "details": null,
       "description": "Unlawful Flight to Avoid Prosecution - Conspiracy; Fraudulent Schemes and Artifices; Money Laundering in the First Degree; Theft (10 Counts); Illegal Control of an Enterprise (Two Counts); Forgery; Fraudulent Schemes and Practices; Failure to Appear",
@@ -360,7 +447,7 @@
       "weight_min": 209
     },
     {
-      "id": "70fe",
+      "id": "2aa8",
       "age_range": "22 (at time of disappearance)",
       "details": "<p>Randy Stewart Doran left his family’s Los Angeles, California, residence in early 1978. His last communication with family members was in early April 1978 when he called an aunt, stating he was working on a shipping dock (possibly on the SS President riverboat) in New Orleans, Louisiana. Prior to his disappearance, he sent a postcard to his aunt from New Orleans saying he was doing fine. He has never been heard from again.</p>\r\n<p> </p>\r\n<p>Doran was known to hitchhike, traveling across the country from California to Florida. He was a U.S. Marine Corps veteran, an avid guitar player, and liked to write short stories and poetry. He also carried a small pocket Bible with him. Fingerprints are available for comparison, and DNA from family members is in CODIS.</p>\r\n<p> </p>",
       "description": "April 1, 1978\r\nNew Orleans, Louisiana",
@@ -391,7 +478,7 @@
       "weight_min": 160
     },
     {
-      "id": "92b9",
+      "id": "0841",
       "age_range": "Forty years old",
       "details": "<p>On Thursday, October 26, 1995, James S. Ruland was last seen hitchhiking in North Fond du Lac, Wisconsin. Nine days later, he was reported missing by his sister. On November 14, 1995, Ruland’s white Dodge Aires station wagon was recovered from the Stretch Truck Stop near North Fond du Lac. The keys were in the ignition and Ruland’s personal possessions were in the cargo area.</p>\r\n<p>Ruland sustained a severe head injury when he was young which required a shunt implant. The initial shunt failed, necessitating a second shunt. The implants required “bilateral burr holes” so the shunts could pass through his skull. Fond du Lac Sheriff’s Office is requesting assistance with locating Ruland.</p>",
       "description": "October 26, 1995\r\nNorth Fond du Lac, Wisconsin",
@@ -416,7 +503,7 @@
       "weight_min": 160
     },
     {
-      "id": "a75b",
+      "id": "831a",
       "age_range": null,
       "details": "<p>The Federal Bureau of Investigation's Seattle Field Office and the Tulalip Tribal Police are investigating the disappearance of Mary Johnson (Davis), last seen November 25, 2020, walking east on Firetrail Road on the Tulalip Reservation in Washington State.  Mary was traveling to a friend’s house and never arrived.  She was reported missing December 9, 2020. </p>\r\n<p> </p>",
       "description": "November 25, 2020\r\nTulalip Reservation\r\nWashington State",
@@ -453,7 +540,7 @@
       "weight_min": 115
     },
     {
-      "id": "629c",
+      "id": "84fa",
       "age_range": null,
       "details": null,
       "description": "Conspiracy to Distribute and to Possess with Intent to Distribute Heroin, 500 Grams or More of Cocaine, Cocaine Base, 40 Grams or More of Fentanyl, 500 Grams or More of Methamphetamine, and MDMA",
@@ -526,7 +613,7 @@
       "weight_min": 180
     },
     {
-      "id": "cb29",
+      "id": "7c86",
       "age_range": null,
       "details": "<p>On May 30, 2023, the body of 33-year-old Brandon Lee Wagoner was found along the Blue Ridge Parkway near milepost 221 in Alleghany County, North Carolina. Law enforcement rangers from the National Park Service determined Wagoner was hit by a vehicle and killed. Investigators are looking for witnesses who traveled along the Blue Ridge Parkway on the evening of May 29, 2023, or in the early morning hours of May 30, 2023.</p>\r\n<p> </p>\r\n<p> </p>",
       "description": "Hit-and-Run Victim\r\nAlleghany County, North Carolina\r\nMay 30, 2023",
@@ -557,7 +644,7 @@
       "weight_min": null
     },
     {
-      "id": "2ba6",
+      "id": "284d",
       "age_range": null,
       "details": null,
       "description": "Conspiracy to Provide and Conceal Material Support and Resources to Terrorists; Narco-Terrorism Conspiracy; Racketeering Conspiracy",
@@ -582,7 +669,7 @@
       "weight_min": null
     },
     {
-      "id": "6646",
+      "id": "0252",
       "age_range": null,
       "details": "<p>The FBI's Albuquerque Field Office, Farmington Resident Agency in New Mexico is seeking the public's assistance in finding the person(s) responsible for the death of Isiah Terrell Billy, who lived in Shiprock, New Mexico, on the Navajo Nation.</p>\r\n<p> </p>\r\n<p>On October 5, 2020, Billy was found deceased in a wash east of the Sinclair gas station near mile marker 23 on U.S. Highway 64, in Shiprock, New Mexico.  The cause of death was ruled to be strangulation.</p>\r\n<p> </p>",
       "description": "Homicide Victim\r\nShiprock, New Mexico\r\nOctober 5, 2020",
@@ -607,7 +694,7 @@
       "weight_min": 144
     },
     {
-      "id": "ef73",
+      "id": "41ed",
       "age_range": null,
       "details": null,
       "description": "Conspiracy to Distribute Five Kilograms or More of Cocaine, Fifty Grams or More of Methamphetamine, One Kilogram or More of Heroin, and One Thousand Kilograms or More of Marijuana for Importation into the United States; Use of a Firearm",
@@ -632,7 +719,7 @@
       "weight_min": 180
     },
     {
-      "id": "f569",
+      "id": "d7aa",
       "age_range": null,
       "details": "<p>The Federal Bureau of Investigation's Minneapolis Field Office, Pierre, South Dakota, Resident Agency, along with the Cheyenne River Sioux Tribe Law Enforcement Services, is seeking the public’s assistance in identifying the unknown individual(s) responsible for the murders of Carmen Charger and <a data-linktype=\"internal\" href=\"https://www.fbi.gov/wanted/seeking-info/delmas-traversie-jr-\" data-val=\"b659218ef3554ffe960878620f184cb6\" data-urltype=\"_direct_\">Delmas Traversie, Jr.</a>, in Eagle Butte, South Dakota, in March of 2019.</p>\r\n<p>From March 13, 2019, through March 15, 2019, a snow storm occurred in most of South Dakota. Charger, 39, and Traversie, Jr., 63, were killed at House 717, No Heart Housing, in Eagle Butte around that time. Anyone with information related to their deaths or related to the presence of individuals frequenting House 717 around the time of this snow storm is asked to contact the FBI.</p>",
       "description": "Homicide Victim\r\nEagle Butte, South Dakota\r\nMarch 2019",
@@ -663,7 +750,7 @@
       "weight_min": 210
     },
     {
-      "id": "5b3e",
+      "id": "32e0",
       "age_range": null,
       "details": null,
       "description": "Conspiracy to Commit Kidnapping; Kidnapping (3 Counts); Interstate Travel in Aid of Racketeering; Conspiracy to Collect an Extension of Credit by Extortionate Means; Collection of an Extension of Credit by Extortionate Means; Conspiracy to Distribute Marijuana; Aiding and Abetting",
@@ -706,7 +793,7 @@
       "weight_min": 140
     },
     {
-      "id": "ab03",
+      "id": "e831",
       "age_range": null,
       "details": "<p>On November 1, 1999, Kevin Brame, a 6-year-veteran of the Dayton Police Department, was murdered in front of 624 Cherry Drive, Dayton, Ohio. He was returning his two children to his estranged wife after a visitation.  Brame was ambushed and fatally shot one time in the neck by an unknown suspect or suspects as he attempted to enter his vehicle which was parked in the driveway of the residence.  Brame was found to be in possession of his service weapon and belongings, suggesting it was not a robbery. </p>\r\n<p> </p>",
       "description": "Murder Victim\r\nDayton, Ohio\r\nNovember 1, 1999",
@@ -743,7 +830,7 @@
       "weight_min": null
     },
     {
-      "id": "7b72",
+      "id": "b145",
       "age_range": "36 (at the time of disappearance)",
       "details": "<p>Alexander James was last seen on February 21, 2022, working in the front yard of his residence in Bridge City, Texas. James was wearing a forest green long-sleeved shirt, blue jean pants, tan work boots, and he had an orange climbing rope. James made a living as a tree trimmer. James left behind his Texas identification card and personal belongings. James does not own any transportation. It is unknown if he left on foot or in a vehicle with an unknown person. According to family member's, James is known to disappear or “go off the grid” for short periods of time. However, it’s unusual for him not to have any contact with his ex-wife and young son.</p>\r\n<p>The Bridge City Police Department is asking for assistance in locating James or providing details of his disappearance.</p>",
       "description": "February 21, 2022\r\nBridge City, Texas",
@@ -768,7 +855,7 @@
       "weight_min": 160
     },
     {
-      "id": "2e72",
+      "id": "9a57",
       "age_range": null,
       "details": "<p>Shayan Kazemi departed the United States from Los Angeles, California, on September 24, 2011. He arrived in Istanbul, Turkey, on September 24, 2011, and last made contact with his family by telephone on September 25, 2011, from the Istanbul Royal Hotel, Aksaray Caddesi No. 16, 34480 Laleli, Istanbul, Turkey. He has not been heard from since that time.</p>\r\n<p> </p>",
       "description": "September 25, 2011\r\nIstanbul, Turkey",
@@ -793,7 +880,7 @@
       "weight_min": 90
     },
     {
-      "id": "5817",
+      "id": "ce52",
       "age_range": null,
       "details": null,
       "description": "",
@@ -848,7 +935,7 @@
       "weight_min": null
     },
     {
-      "id": "10b6",
+      "id": "7b73",
       "age_range": null,
       "details": null,
       "description": "Racketeer Influenced and Corrupt Organizations (RICO) Conspiracy; Violent Crime in Aid of Racketeering; Conspiracy to Distribute Controlled Substances; Conspiracy to Import Controlled Substances; Hostage Taking Conspiracy and Hostage Taking; Conspiracy to Launder Money; Carry and Use of a Firearm in Furtherance of a Crime of Violence or Drug Trafficking Crime; Criminal Forfeiture",
@@ -897,7 +984,7 @@
       "weight_min": 180
     },
     {
-      "id": "7ef4",
+      "id": "d253",
       "age_range": null,
       "details": null,
       "description": "Conspiracy to Act as Agents of a Foreign Government; Conspiracy to Engage in Interstate Harassment",
@@ -922,7 +1009,7 @@
       "weight_min": null
     },
     {
-      "id": "03a0",
+      "id": "1d1b",
       "age_range": null,
       "details": null,
       "description": "Conspiracy to Produce and Transfer False Documents; Transfer of False Documents; False Use of Passports; Aggravated Identity Theft",
@@ -953,7 +1040,7 @@
       "weight_min": null
     },
     {
-      "id": "3609",
+      "id": "1fc7",
       "age_range": null,
       "details": null,
       "description": "Conspiracy to Violate the International Emergency Economic Powers Act (IEEPA)",
@@ -990,7 +1077,7 @@
       "weight_min": 250
     },
     {
-      "id": "e5cb",
+      "id": "eaeb",
       "age_range": null,
       "details": "<p>On February 3, 2018, Patrick Scott, Jr. was waiting at the bus stop at 62nd Street and Market Street in Oakland, California, to go to his grandmother's house.  An unknown person approached him and fired multiple shots, killing Patrick Scott, Jr.</p>\r\n<p> </p>",
       "description": "Murder Victim\r\nOakland, California\r\nFebruary 3, 2018",
@@ -1021,7 +1108,7 @@
       "weight_min": null
     },
     {
-      "id": "868c",
+      "id": "bb08",
       "age_range": null,
       "details": null,
       "description": "Conspiracy to Act as Agents of a Foreign Government; Conspiracy to Engage in Interstate Harassment",
@@ -1046,7 +1133,7 @@
       "weight_min": null
     },
     {
-      "id": "4c50",
+      "id": "a108",
       "age_range": "25 to 35 years old",
       "details": "<p>On January 12, 1998, an unknown Hispanic female was discovered at the Turf Motel in Astoria, New York. The victim was between 25 and 35 years old (at time of recovery), approximately 5’1” tall and 143 pounds, with black hair and brown eyes. To date, this Hispanic female remains unidentified.</p>",
       "description": "Astoria, New York\r\nJanuary 12, 1998",
@@ -1083,7 +1170,7 @@
       "weight_min": 143
     },
     {
-      "id": "06cc",
+      "id": "bca5",
       "age_range": null,
       "details": "<p>On July 13, 2018, a federal grand jury sitting in the District of Columbia returned an indictment against 12 Russian military intelligence officers for their alleged roles in <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/russian-interference-in-2016-u-s-elections\" data-val=\"https://www.fbi.gov/wanted/cyber/russian-interference-in-2016-u-s-elections\" data-linktype=\"external\">interfering with the 2016 United States (U.S.) elections</a>.  The indictment charges 11 defendants, Sergey Aleksandrovich Morgachev, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/artem-andreyevich-malyshev\" data-val=\"https://www.fbi.gov/wanted/cyber/artem-andreyevich-malyshev\" data-linktype=\"external\">Artem Andreyevich Malyshev</a>, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/aleksey-viktorovich-lukashev\" data-val=\"https://www.fbi.gov/wanted/cyber/aleksey-viktorovich-lukashev\" data-linktype=\"external\">Aleksey Viktorovich Lukashev</a>, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/boris-alekseyevich-antonov\" data-val=\"https://www.fbi.gov/wanted/cyber/boris-alekseyevich-antonov\" data-linktype=\"external\">Boris Alekseyevich Antonov</a>, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/dmitriy-sergeyevich-badin\" data-val=\"https://www.fbi.gov/wanted/cyber/dmitriy-sergeyevich-badin\" data-linktype=\"external\">Dmitriy Sergeyevich Badin</a>, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/ivan-sergeyevich-yermakov\" data-val=\"https://www.fbi.gov/wanted/cyber/ivan-sergeyevich-yermakov\" data-linktype=\"external\">Ivan Sergeyevich Yermakov</a>, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/nikolay-yuryevich-kozachek\" data-val=\"https://www.fbi.gov/wanted/cyber/nikolay-yuryevich-kozachek\" data-linktype=\"external\">Nikolay Yuryevich Kozachek</a>, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/pavel-vyacheslavovich-yershov\" data-val=\"https://www.fbi.gov/wanted/cyber/pavel-vyacheslavovich-yershov\" data-linktype=\"external\">Pavel Vyacheslavovich Yershov</a>, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/aleksandr-vladimirovich-osadchuk\" data-val=\"https://www.fbi.gov/wanted/cyber/aleksandr-vladimirovich-osadchuk\" data-linktype=\"external\">Aleksandr Vladimirovich Osadchuk</a>, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/aleksey-aleksandrovich-potemkin\" data-val=\"https://www.fbi.gov/wanted/cyber/aleksey-aleksandrovich-potemkin\" data-linktype=\"external\">Aleksey Aleksandrovich Potemkin</a>, and Viktor Borisovich Netyksho, with a computer hacking conspiracy involving gaining unauthorized access into the computers of U.S. persons and entities involved in the 2016 U.S. presidential election, stealing documents from those computers, and staging releases of the stolen documents to interfere with the 2016 U.S. presidential election.  The indictment also charges these defendants with aggravated identity theft, false registration of a domain name, and conspiracy to commit money laundering.  Two defendants, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/aleksandr-vladimirovich-osadchuk\" data-val=\"https://www.fbi.gov/wanted/cyber/aleksandr-vladimirovich-osadchuk\" data-linktype=\"external\">Aleksandr Vladimirovich Osadchuk </a>and <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/anatoliy-sergeyevich-kovalev\" data-val=\"https://www.fbi.gov/wanted/cyber/anatoliy-sergeyevich-kovalev\" data-linktype=\"external\">Anatoliy Sergeyevich Kovalev</a>, are charged with a separate conspiracy to commit computer crimes, relating to hacking into the computers of U.S. persons and entities responsible for the administration of 2016 U.S. elections, such as state boards of elections, secretaries of state, and U.S. companies that supplied software and other technology related to the administration of U.S. elections.  The United States District Court for the District of Columbia in Washington, D.C. issued a federal arrest warrant for Sergey Aleksandrovich Morgachev upon the grand jury’s return of the indictment.</p>\r\n<p> </p>",
       "description": "Conspiracy to Commit an Offense Against the United States; False Registration of a Domain Name; Aggravated Identity Theft; Conspiracy to Commit Money Laundering",
@@ -1108,7 +1195,7 @@
       "weight_min": null
     },
     {
-      "id": "73fa",
+      "id": "040b",
       "age_range": null,
       "details": null,
       "description": "Conspiracy to Violate the International Emergency Economic Powers Act (IEEPA); Bank Fraud; Conspiracy to Commit Bank Fraud; Money Laundering; Conspiracy to Commit Money Laundering; Conspiracy to Defraud the United States",
@@ -1133,7 +1220,7 @@
       "weight_min": 157
     },
     {
-      "id": "7cf8",
+      "id": "e125",
       "age_range": null,
       "details": null,
       "description": "Mail Fraud",
@@ -1164,7 +1251,7 @@
       "weight_min": 220
     },
     {
-      "id": "5407",
+      "id": "e25b",
       "age_range": "26 to 34 years old",
       "details": "<p>On August 14, 2016, the victim and her friend were in a parked vehicle in Flagstaff, Arizona. The two had been at this location, which was extremely dark, for a short time, waiting for a friend, before falling asleep in the vehicle. Their seats were reclined and the vehicle was off. Both had recently left from a bar and had been drinking that night. While asleep in the car, the victim was awoken to a knock on the driver door window. The subject at the window identified himself as a police officer and began questioning the two about a possible DUI. The suspect requested the victim’s license, registration and insurance. The victim was directed out of the vehicle and brought to the rear of her car. The victim was further questioned and \"frisked\" on the inside of her legs and breasts. The suspect told the victim that because the keys were in the ignition, she could face a DUI charge. The victim questioned the suspect as to his name and badge number but was told to stop asking or she would be handcuffed and arrested. The suspect directed the victim to come with him to his patrol vehicle to submit to a portable breath test. The suspect walked the victim to a nearby alley where he pushed her against a telephone pole. The suspect first digitally penetrated the victim and then sexually assaulted (penile) her. The victim cried out, which her friend heard, and then the friend called out for her and the suspect ran off. The suspect fled from the assault area on foot.</p>",
       "description": "Flagstaff, Arizona\r\nAugust 14, 2016",
@@ -1189,7 +1276,7 @@
       "weight_min": null
     },
     {
-      "id": "ce94",
+      "id": "effb",
       "age_range": null,
       "details": "<p>On July 13, 2018, a federal grand jury sitting in the District of Columbia returned an indictment against 12 Russian military intelligence officers for their alleged roles in interfering with the 2016 United States (U.S.) elections.  The indictment charges 11 defendants, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/boris-alekseyevich-antonov\" data-val=\"https://www.fbi.gov/wanted/cyber/boris-alekseyevich-antonov\" data-linktype=\"external\">Boris Alekseyevich Antonov</a>, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/dmitriy-sergeyevich-badin\" data-val=\"https://www.fbi.gov/wanted/cyber/dmitriy-sergeyevich-badin\" data-linktype=\"external\">Dmitriy Sergeyevich Badin</a>, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/nikolay-yuryevich-kozachek\" data-val=\"https://www.fbi.gov/wanted/cyber/nikolay-yuryevich-kozachek\" data-linktype=\"external\">Nikolay Yuryevich Kozachek</a>, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/aleksey-viktorovich-lukashev\" data-val=\"https://www.fbi.gov/wanted/cyber/aleksey-viktorovich-lukashev\" data-linktype=\"external\">Aleksey Viktorovich Lukashev</a>, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/artem-andreyevich-malyshev\" data-val=\"https://www.fbi.gov/wanted/cyber/artem-andreyevich-malyshev\" data-linktype=\"external\">Artem Andreyevich Malyshev</a>, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/sergey-aleksandrovich-morgachev\" data-val=\"https://www.fbi.gov/wanted/cyber/sergey-aleksandrovich-morgachev\" data-linktype=\"external\">Sergey Aleksandrovich Morgachev</a>, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/aleksandr-vladimirovich-osadchuk\" data-val=\"https://www.fbi.gov/wanted/cyber/aleksandr-vladimirovich-osadchuk\" data-linktype=\"external\">Aleksandr Vladimirovich Osadchuk</a>, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/aleksey-aleksandrovich-potemkin\" data-val=\"https://www.fbi.gov/wanted/cyber/aleksey-aleksandrovich-potemkin\" data-linktype=\"external\">Aleksey Aleksandrovich Potemkin</a>, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/ivan-sergeyevich-yermakov\" data-val=\"https://www.fbi.gov/wanted/cyber/ivan-sergeyevich-yermakov\" data-linktype=\"external\">Ivan Sergeyevich Yermakov</a>, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/pavel-vyacheslavovich-yershov\" data-val=\"https://www.fbi.gov/wanted/cyber/pavel-vyacheslavovich-yershov\" data-linktype=\"external\">Pavel Vyacheslavovich Yershov</a>, and Viktor Borisovich Netyksho, with a computer hacking conspiracy involving gaining unauthorized access into the computers of U.S. persons and entities involved in the 2016 U.S. presidential election, stealing documents from those computers, and staging releases of the stolen documents to interfere with the 2016 U.S. presidential election.  The indictment also charges these defendants with aggravated identity theft, false registration of a domain name, and conspiracy to commit money laundering.  Two defendants, <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/aleksandr-vladimirovich-osadchuk\" data-val=\"https://www.fbi.gov/wanted/cyber/aleksandr-vladimirovich-osadchuk\" data-linktype=\"external\">Aleksandr Vladimirovich Osadchuk </a>and <a data-urltype=\"/view\" href=\"https://www.fbi.gov/wanted/cyber/anatoliy-sergeyevich-kovalev\" data-val=\"https://www.fbi.gov/wanted/cyber/anatoliy-sergeyevich-kovalev\" data-linktype=\"external\">Anatoliy Sergeyevich Kovalev</a>, are charged with a separate conspiracy to commit computer crimes, relating to hacking into the computers of U.S. persons and entities responsible for the administration of 2016 U.S. elections, such as state boards of elections, secretaries of state, and U.S. companies that supplied software and other technology related to the administration of U.S. elections.  The United States District Court for the District of Columbia in Washington, D.C. issued a federal arrest warrant for each of these defendants upon the grand jury’s return of the indictment.</p>\r\n<p> </p>",
       "description": "CONSPIRACY TO COMMIT AN OFFENSE AGAINST THE UNITED STATES; FALSE REGISTRATION OF A DOMAIN NAME; AGGRAVATED IDENTITY THEFT; CONSPIRACY TO COMMIT MONEY LAUNDERING",
@@ -1280,7 +1367,7 @@
       "weight_min": null
     },
     {
-      "id": "449e",
+      "id": "ed27",
       "age_range": null,
       "details": "<p>The FBI's Cleveland Field Office and the Cleveland Metroparks Police Department in Ohio are asking for the public's assistance in identifying the person or persons responsible for the deaths of two victims.</p>\r\n<p> </p>\r\n<p>On June 4, 2019, at approximately 5:00 p.m., longtime friends Carnell E. Sledge and Katherine C. Brown arrived at the Rocky River Reservation in Fairview Park, Ohio. Both met at a pull-off lot north of the Lorain Road bridge. Sledge and Brown were shot in the head while sitting on a bench alongside the river. Sledge was 40 years old at the time of his death, and Brown was 33 years old at the time of her death.</p>\r\n<p> </p>",
       "description": "Murder Victims\r\nFairview Park, Ohio\r\nJune 4, 2019",
@@ -1311,7 +1398,7 @@
       "weight_min": null
     },
     {
-      "id": "c9c0",
+      "id": "d387",
       "age_range": null,
       "details": null,
       "description": "Conspiracy to Distribute Controlled Substances of 500 Grams or More of a Cocaine Mixture",
@@ -1342,7 +1429,7 @@
       "weight_min": 185
     },
     {
-      "id": "d30a",
+      "id": "1283",
       "age_range": null,
       "details": null,
       "description": "Conspiracy to Commit Hostage Taking; Hostage Taking",
@@ -1367,7 +1454,7 @@
       "weight_min": 160
     },
     {
-      "id": "16f0",
+      "id": "747c",
       "age_range": null,
       "details": null,
       "description": "Conspiracy to Defraud the United States",
@@ -1392,7 +1479,7 @@
       "weight_min": null
     },
     {
-      "id": "f08a",
+      "id": "11ec",
       "age_range": null,
       "details": "<p>The FBI's Atlanta Field Office and the Georgia Bureau of Investigation are seeking the public's assistance with the murders of Kevin and Cedric Kind. On September 13, 2019, at about 8:30 a.m, Kevin Kind, was found shot to death inside a local car wash in the 300 block of East Palm Street, Fitzgerald, Georgia. At approximately 9:00 a.m. that same day, Kevin's brother, Cedric Kind, was found shot to death inside his residence in Fitzgerald, Georgia.</p>\r\n<p> </p>",
       "description": "Murder Victims\r\nFitzgerald, Georgia\r\nSeptember 13, 2019",
@@ -1417,7 +1504,7 @@
       "weight_min": null
     },
     {
-      "id": "5f1e",
+      "id": "d39d",
       "age_range": null,
       "details": null,
       "description": "Fraud by Wire; RICO Conspiracy; Mail Fraud; Money Laundering Conspiracy; Money Laundering; Aiding and Abetting; Securities Fraud; Filing False Registration With the SEC; False Filings With the SEC; Falsification of Books and Records",
@@ -1454,7 +1541,7 @@
       "weight_min": 290
     },
     {
-      "id": "9f84",
+      "id": "2e55",
       "age_range": null,
       "details": "<p>The Federal Bureau of Investigation in Columbia, South Carolina, is seeking information regarding the death of Tasjunique Graham, age 23, and her three-year-old daughter Bailey Simon.  On September 28, 2020, Graham and her daughter were shot and killed at their residence in the 1600 block of Suggs Street in Conway, South Carolina, by an unknown individual(s). To date, there have been no arrests made in the case.</p>\r\n<p> </p>",
       "description": "Homicide Victims\r\nConway, South Carolina\r\nSeptember 28, 2020",
@@ -1485,7 +1572,7 @@
       "weight_min": null
     },
     {
-      "id": "6b2b",
+      "id": "9706",
       "age_range": null,
       "details": null,
       "description": "Unlawful Flight to Avoid Prosecution - Murder",
@@ -1522,7 +1609,7 @@
       "weight_min": 160
     },
     {
-      "id": "754f",
+      "id": "a2ed",
       "age_range": null,
       "details": "<p>On March 17, 2019, a passerby noticed the body of Gunner Johnson Bailey about 50 feet off Tenino Road on the Warm Springs Indian Reservation in Oregon.  Bailey, age 31 at the time of his death, had been shot.  The Federal Bureau of Investigation's Portland Field Office is asking for the public's assistance in identifying the circumstances surrounding his death. </p>\r\n<p> </p>",
       "description": "Homicide Victim\r\nWarm Springs Indian Reservation, Oregon\r\nMarch 17, 2019",
@@ -1547,7 +1634,7 @@
       "weight_min": null
     },
     {
-      "id": "38e4",
+      "id": "4f8d",
       "age_range": "Approximately 17 to 23 years old",
       "details": "<p>On December 17, 2000, the skeletal remains of an unidentified male were located beside the roadway near 8500 Davis Estate Road in Needville, Texas (Fort Bend County). Based on the condition of the remains, the decedent is believed to have been deceased approximately 3 - 9 months prior to discovery. The decedent had straight dark brown to black hair, approximately 2 inches in length. Clothing items found with the remains include blue jeans with a 29\" waistband (Route 66 brand), a brown leather belt, beige socks, brown suede shoes (Pele brand), a black wrist band (Guess logo/brand), and a pink fabric wrist band. The decedent had a healed fracture of his tailbone and his front two lower incisor teeth were rotated and overlapping. The victim was found with many of his bones inside a green plastic bag.</p>",
       "description": "Needville, Texas\r\nDecember 17, 2000",
@@ -1572,7 +1659,7 @@
       "weight_min": null
     },
     {
-      "id": "7bb4",
+      "id": "6ef0",
       "age_range": null,
       "details": null,
       "description": "Unlawful Flight to Avoid Prosecution - Failure to Appear (Rape, Sodomy, Burglary)",
@@ -1597,7 +1684,7 @@
       "weight_min": 150
     },
     {
-      "id": "e3e6",
+      "id": "1416",
       "age_range": null,
       "details": "<p>The Federal Bureau of Investigation's Albuquerque Field Office is asking for the public's assistance in identifying the person(s) responsible for the homicide of Zachariah Juwaun Shorty.</p>\r\n<p> </p>\r\n<p>On July 25, 2020, Shorty was found deceased on a dirt pathway in a field in Nenahnezad, New Mexico, on the Navajo Nation. The cause of death was gunshot wounds.</p>\r\n<p> </p>\r\n<p>He was last seen on July 21, 2020, in the area of the Journey Inn in Farmington, New Mexico.</p>",
       "description": "Homicide Victim\r\nNenahnezad, New Mexico\r\nJuly 25, 2020",
@@ -1640,7 +1727,7 @@
       "weight_min": 130
     },
     {
-      "id": "f010",
+      "id": "594c",
       "age_range": "40 to 60 years old",
       "details": "<p>On June 3, 1978 victim’s body was discovered in a shallow grave, covered with brush, in the area of Florida State Road 29, just south of the interchange with Interstate 75 (Alligator Alley). The victim’s body was covered with a white substance, which was later analyzed and identified to be hydrated lime or caustic lime, which is used in such things as mortars and cements as well as agricultural purposes. Cause of death is the result of blunt force trauma to the head.</p>",
       "description": "Collier County, Florida\r\nJune 3, 1978",
@@ -1665,7 +1752,7 @@
       "weight_min": 176
     },
     {
-      "id": "6eef",
+      "id": "7ceb",
       "age_range": "15 to 30 years old",
       "details": "<p>On June 20, 1979, the victim's unidentified remains were discovered on an embankment between the eastbound lanes of Route 22/322 and the Juaniata River in Watts Township, Perry County, Pennsylvania. For additional information regarding this victim, refer to the National Missing and Unidentified Persons System (NamUs) unidentified person database, case report number UP#5166.</p>",
       "description": "Newport, Watts Township, Perry County, Pennsylvania\r\nJune 20, 1979",
@@ -1720,7 +1807,7 @@
       "weight_min": 170
     },
     {
-      "id": "e736",
+      "id": "a01f",
       "age_range": null,
       "details": "<p>At approximately 12:35 a.m., on June 11, 2020, officers from the Portland Police Bureau responded to a report of gunfire at the 600 block of NE 162nd Avenue in Portland, Oregon. When they arrived, they found the body of 28-year-old De’annzello McDonald.  Surveillance video showed McDonald walking up a flight of stairs with two men.  A fourth man ran towards them, and then ran away holding something in his right hand.  Based on information gathered to date, investigators believe the suspect to be a young Black man in his mid 20s, average height to 6’0” tall, with a thin frame and possibly braided hair.  The suspect was wearing a light, multi-colored top jacket, dark or black pants, and a light-colored hat.  He was seen getting into a blue or gray Ford Crown Victoria sedan.</p>\r\n<p> </p>",
       "description": "Homicide Victim\r\nPortland, Oregon\r\nJune 11, 2020",
@@ -1751,7 +1838,7 @@
       "weight_min": null
     },
     {
-      "id": "e88a",
+      "id": "9507",
       "age_range": "17 to 25 years old",
       "details": "<p>On July 31, 1991, the badly decomposed body of a white female was found at the bottom of an embankment along southbound Interstate 270 in Frederick County, Maryland. The victim may have been at this location 1-2 weeks prior to discovery. The disposal site was within 10 miles of a truck stop. Due to decomposition, cause of death is unknown.</p>",
       "description": "Frederick, Maryland\r\nJuly 31, 1991",
@@ -1776,7 +1863,7 @@
       "weight_min": 110
     },
     {
-      "id": "728f",
+      "id": "ee44",
       "age_range": "25 years old (Approximately)",
       "details": "<p>On Sunday, April 9, 1989, the victim’s remains were discovered in a tobacco barn in rural Grant County, Kentucky. It is estimated the victim was killed approximately two weeks prior. The victim was shot twice in the back of his head with a .22 caliber weapon, his hands were cut off, and he was stripped of all of his clothing. The victim had extensive dental work, to include a ten unit porcelain fixed, porcelain to metal bridge with missing teeth replaced with porcelain pontics.</p>",
       "description": "April 9, 1989\r\nGrant County, Kentucky",
@@ -1801,7 +1888,7 @@
       "weight_min": 230
     },
     {
-      "id": "b65d",
+      "id": "e729",
       "age_range": "39 (At time of disappearance)",
       "details": "<p>On Sunday, September 15, 2013, the body of an unknown female was discovered in the Mississippi River just south of Hannibal, Missouri. The victim was last seen on Sunday, September 8, 2013, at the Mark Twain Cave and Gift Shop located at 300 Cave Hollow Rd, Hannibal, Missouri, with an unknown white male and an unknown white female. The unknown male is described as being very tall (approximately 6’6”), tan, blond hair, wearing an orange “Iowa Rodeo” cutoff t-shirt, shorts and work boots. The unknown female is described as being short (approximately 5’0”), between 18 and 22 years old, short blonde hair with streaks, wearing a yellow shirt (or tank top) and grey shorts with yellow trim. At this time, the unknown male and unknown female are considered persons of interest in this case. The cause of death is asphyxia due to smothering.</p>\r\n<p>:</p>",
       "description": "September 15, 2013\r\nHannibal, Missouri",
@@ -1850,7 +1937,7 @@
       "weight_min": 120
     },
     {
-      "id": "7e64",
+      "id": "00b0",
       "age_range": "35 - 50 years old",
       "details": "<p>On May 6, 1999, the victim was discovered floating in Lake Barkley, in Lyon County, Kentucky. The victim, a white male, about 5’6\" to 6’1\" inches tall and between 35 to 50 years old, was wrapped in semi-truck snow chains and electrical wire. He had extensive dental work to include a permanent bridge, porcelain and gold crowns, and numerous dental fillings. The victim had suffered a broken leg during his life. The victim was wearing multiple layers of clothes to include; an extra-large white t-shirt with \"No Fear Sports Bar\" logo on the front and \"No Fear Gear\" logo on the back (pictured above), 38\" by 30\" blue jeans, blue and white nylon Starter windbreaker emblazoned with the Dallas Cowboys’ logo, a green nylon Reebok jacket, and 10½ wide white leather \"Voit\" tennis shoes.</p>",
       "description": "Unidentified Male\r\nLake Barkley, Lyons County, Kentucky\r\nMay 6, 1999",
@@ -1893,7 +1980,7 @@
       "weight_min": 235
     },
     {
-      "id": "f770",
+      "id": "cc30",
       "age_range": "25 to 45 years old",
       "details": "<p>On July 6, 1993, construction workers found the victim on I-10, at mile post 105.5, in Buckeye, Arizona. His approximate date of death was in June or July of 1993.</p>",
       "description": "Buckeye, Arizona\r\nJuly 6, 1993",
@@ -1924,7 +2011,7 @@
       "weight_min": null
     },
     {
-      "id": "9c7b",
+      "id": "a82d",
       "age_range": "28 years old (time of incident)",
       "details": "<p>On February 7, 2011, 28-year-old William \"Billy\" DiSilvestro went missing. He was last seen leaving a friend's residence on foot around 2:30 a.m., without his cell phone or jacket. DiSilvestro has a medical condition including seizures that is aggravated when consuming alcohol. DiSilvestro has been known to walk home via railroad tracks and was last seen wearing jeans.</p>",
       "description": "Hamilton, Ohio\r\nFebruary 7, 2011",
@@ -1955,7 +2042,7 @@
       "weight_min": 180
     },
     {
-      "id": "27b6",
+      "id": "b062",
       "age_range": null,
       "details": "<p>On Wednesday, September 23, 1998, 19 year-old University of Wisconsin student Amber Lynn Wilde, disappeared from her Green Bay, Wisconsin, apartment located along August Street.  Her last known contact was a telephone call she placed from the landline in her apartment at 7:16 p.m.    </p>\r\n<p>On October 1, 1998, her vehicle was found in Green Bay, Wisconsin, near Lambeau Field Stadium.  The vehicle was found in the 50 Yard Line Sports Bar and Roadstar Inn parking lot, east of K-mart and off of Lombardi Access Road.  The sports bar and inn have since been torn down.  Witnesses stated, they believe the vehicle had been parked there since September 28, 1998.  Amber’s purse, cellphone, and keys were found in the unlocked vehicle at the time it was recovered. </p>\r\n<p>Contact the Green Bay Police Department if you have information regarding Amber Lynn Wilde’s disappearance or if you saw her or someone else operate her 1988, Silver, GL 4-door Subaru.  Her vehicle had a brown stuffed monkey hanging from the rearview mirror, stuffed animals in the rear back window, and a University of Wisconsin decal across the top portion of the back window.</p>",
       "description": "September 23, 1998\r\nGreen Bay, Wisconsin",
@@ -2004,7 +2091,7 @@
       "weight_min": 135
     },
     {
-      "id": "9f31",
+      "id": "420d",
       "age_range": "17 (at time of disappearance)",
       "details": "<p>Kroh was last seen at the Alex Acres Trailer Park, Halifax, PA, attempting to visit her sister. She did not return to the family home in Millersburg, PA, a distance of seven miles. Her vehicle was recovered the next day in Millersburg town square. Parts of her wallet were found in December 1993 along the Wiconisco Creek, Washington Township, PA, nine miles from Millersburg.</p>",
       "description": "Millersburg, Pennsylvania\r\nAugust 5, 1989",
@@ -2029,7 +2116,7 @@
       "weight_min": 85
     },
     {
-      "id": "ef8e",
+      "id": "c920",
       "age_range": "44 (at time of disappearance)",
       "details": "<p>On June 19, 1999, Walter Greg Fowler's wife reported her husband missing to the Warren County Sheriff's Office in Bowling Green, Kentucky. The victim's wife advised she assisted her husband with loading his \"Jon\" boat into his van, as he was going fishing with some people from work. She further advised she found her husband's boat on the Barren River while she was driving around looking for him. The investigation has revealed that Walter Greg Fowler's disappearance may be the result of foul play. For additional information regarding this victim, refer to the National Missing and Unidentified Persons System (NamUs) missing persons database, case report number MP#4679.</p>",
       "description": "Smiths Grove, Kentucky\r\nJune 19, 1999",
@@ -2060,7 +2147,7 @@
       "weight_min": 220
     },
     {
-      "id": "8dfe",
+      "id": "5695",
       "age_range": "37 years old (at time of incident)",
       "details": "<p>On Sunday, September 3, 2000, at approximately 2300 hours, Tammie Jane Briley disappeared along Interstate 94, adjacent to mile marker 94, near Battle Creek, Michigan. She was last seen crossing the Interstate from the westbound lane to the eastbound lane. On September 12, 2000, she was reported missing by famliy members after they could not reach her.</p>",
       "description": "Battle Creek, Michigan\r\nSeptember 3, 2000",
@@ -2085,7 +2172,7 @@
       "weight_min": 110
     },
     {
-      "id": "0858",
+      "id": "ef22",
       "age_range": null,
       "details": "<p>On or about October 21, 2011, Sylvia June Galvan went missing and her family has not heard from her since. She leaves four children behind and foul play is suspected.</p>",
       "description": "Mount Morris, Michigan\r\nOctober 1-15, 2011",
@@ -2116,7 +2203,7 @@
       "weight_min": 150
     },
     {
-      "id": "7341",
+      "id": "b032",
       "age_range": "45 at time of disappearance",
       "details": "<p>From 01/07-09/2005, Stephanie “Cherry” Wallace attended a Narcotics Anonymous conference in Hampton, VA and returned to Richmond, VA on 01/09/2005. Wallace left a voicemail message for a family member on this date stating that she had returned and was last seen in the 3100 block of 5th Avenue in the Highland Park area of Richmond, VA.</p>",
       "description": "Richmond, Virginia\r\nJanuary 9, 2005",
@@ -2141,7 +2228,7 @@
       "weight_min": 148
     },
     {
-      "id": "d8e5",
+      "id": "7e22",
       "age_range": "38 (at time of disappearance)",
       "details": "<p>Lankester-Cox was last seen leaving his Acworth, GA residence at approximately 10:00p.m. on November 18, 2004. Authorities believe Lankester-Cox’s disappearance is a result of foul play. Information has been developed indicating Lankester-Cox was planning to commit a robbery on the evening of his disappearance, and it is believed he was killed during the robbery attempt or shortly afterwards.</p>",
       "description": "Acworth, Georgia\r\nNovember 18, 2004",
@@ -2166,7 +2253,7 @@
       "weight_min": 170
     },
     {
-      "id": "74ce",
+      "id": "c978",
       "age_range": "20 (at time of incident)",
       "details": "<p>On March 17, 1998, Shannon Elaine Arif was reported missing by her husband. Her husband advised he last saw his wife at approximately 9:45 am prior to leaving for work that morning. Shannon was scheduled to work at the Clarksville Wal-Mart from 4:30 pm to 9:15 pm, and when she did not return home, her husband went to Wal-Mart and found her car in the parking lot. Shannon’s purse was found in the car. Wal-Mart management advised that Shannon did not report for work that day.</p>",
       "description": "Clarksville, Tennessee\r\nMarch 17, 1998",
@@ -2191,7 +2278,7 @@
       "weight_min": 100
     },
     {
-      "id": "913c",
+      "id": "1cd8",
       "age_range": "19 years old (at time of disappearance)",
       "details": "<p>On November 21, 2002, Sierra Thomas was with a male friend when her then-current boyfriend saw them together. A short time later, the victim and her boyfriend met and he is the last person to see her alive. Thomas was last seen wearing light blue sweatpants, dark blue or black shirt, black Guess jacket, and a multi-colored scarf.</p>",
       "description": "Atlantic City, New Jersey\r\nNovember 21, 2002",
@@ -2228,7 +2315,7 @@
       "weight_min": 140
     },
     {
-      "id": "70b2",
+      "id": "7f3b",
       "age_range": "26 years old (at time of incident)",
       "details": "<p>On Monday, December 13, 2004, Stephan Mitchell Adams completed a final examination at Northeastern State University (NSU) in Tahlequah, Oklahoma. Stephan was last seen leaving the NSU campus in his white truck. His girlfriend phoned him to ask how the final went, and Stephan advised that his exam went well. Stephan told his girlfriend that he was giving a man a ride to Keys, Oklahoma, and that he would call her right back. Stephan intended to visit his mother in Webbers Falls, Oklahoma. Since this date, Stephan has missed work, other final examinations, and has had no contact with his family or friends. Stephan’s absence is considered suspicious.</p>",
       "description": "Tahlequah, Oklahoma\r\nDecember 13, 2004",
@@ -2253,7 +2340,7 @@
       "weight_min": 200
     },
     {
-      "id": "d64f",
+      "id": "1222",
       "age_range": "34 years old",
       "details": "<p>On July 24, 2002, Robert Lee Kelley was involved in a single vehicle crash on Rt. 675 1/10 mile east on Rt. 685 in Buckingham County, Virginia. Kelley vanished from the accident scene prior to law enforcement arriving to investigate. Kelley has not been heard from since the accident.</p>",
       "description": "Arvonia, Virginia\r\nJuly 24, 2002",
@@ -2290,7 +2377,7 @@
       "weight_min": 160
     },
     {
-      "id": "8f26",
+      "id": "916f",
       "age_range": "16 years old",
       "details": "<p>On Friday, October 31, 1969, Patricia Spencer (16) and Pamela Sue Hobley (15) (schoolmates) were reported missing from Oscoda, Michigan. The girls were not considered friends, but it is thought that they may have skipped school together and no one has seen or heard from them since. Neither girl had a purse or ID with them. Foul play is suspected.</p>",
       "description": "Oscoda, Michigan\r\nOctober 31, 1969",
@@ -2315,7 +2402,7 @@
       "weight_min": 120
     },
     {
-      "id": "96c3",
+      "id": "e630",
       "age_range": "33 (time of incident)",
       "details": "<p>On April 8, 2011, Robert Lee Hourihan disappeared after visiting the E.W. Thomas Grocery store at approximately 8:00 a.m. in Palmyra, Virginia. The victim's last cell phone call was at 7:41 a.m. in Palmyra, Virginia. The victim was driving a white 2004 Chevrolet Cavalier with personalized license plates \"TARAMAE.\" on May 28, 2011, the vehicle was located in a Target parking lot in La Plata, Maryland. For additional information regarding this victim, refer to the National Missing and Unidentified Persons System (NamUs) missing person database, case report number MP#10497.</p>",
       "description": "Palmyra, Virginia\r\nApril 8, 2011",
@@ -2340,7 +2427,7 @@
       "weight_min": 200
     },
     {
-      "id": "78d3",
+      "id": "6039",
       "age_range": "21",
       "details": "<p>Rose Marie Bly was last seen leaving her residence in St. Croix Falls, WI, enroute to Cushing, WI, a distance of five miles. Her car was recovered five days later in Grantsburg, WI, in a parking lot typically used by truck drivers to park their tractor trailers. This parking lot is approximately 30 miles from her residence.</p>",
       "description": "St. Croix Falls, Wisconsin\r\nAugust 21, 2009",
@@ -2371,7 +2458,7 @@
       "weight_min": 110
     },
     {
-      "id": "e4cb",
+      "id": "4a0d",
       "age_range": "18 (at time of disappearance)",
       "details": "<p>On June 20, 1993, Sarah Ann Norfleet was dropped off at her Bountiful, Utah, residence by her friends and was never seen or heard from again. With regard to her disappearance, none of her personal effects to include hygiene and clothing items were taken. Foul play is suspected in this missing person case.</p>",
       "description": "Bountiful, Utah\r\nJune 20, 1993",
@@ -2396,7 +2483,7 @@
       "weight_min": 134
     },
     {
-      "id": "c834",
+      "id": "6a7d",
       "age_range": "23 (in 2000)",
       "details": "<p>Matthew David Pendergrast, a senior at Rhodes College, departed his residence in Memphis, Tennessee, between 7:30 and 8 a.m. on December 1, 2000, to attend class. He never arrived and was not seen again. His vehicle, a 1998 Toyota 4Runner, was found abandoned in Lonoke, Arkansas, at approximately 2 p.m. that same day. The vehicle was recovered near a swamp just off Interstate 40 and was unlocked with the keys and victim’s backpack still inside. A search of the surrounding area revealed the victim’s clothing, shoes, and wallet containing cash, driver’s license, and credit card located approximately 100 yards from his vehicle but no additional clues as to his whereabouts.</p>",
       "description": "Memphis, Tennessee\r\nDecember 1, 2000",
@@ -2421,7 +2508,7 @@
       "weight_min": 110
     },
     {
-      "id": "9778",
+      "id": "8b1e",
       "age_range": "16 at time of disappearance",
       "details": "<p>On 10/02/2003, Carrasco was last seen by her cousins as she went to bed. The next morning, when her room was checked, Carrasco was missing. Her room had a door leading to the outside, and it was unlocked. Carrasco left wearing her beige nightgown and her Bible was also not in the room.</p>",
       "description": "Balmorhea, Texas\r\nOctober 2, 2003",
@@ -2446,7 +2533,7 @@
       "weight_min": 110
     },
     {
-      "id": "0a31",
+      "id": "0667",
       "age_range": "16",
       "details": "<p>Mary Ann was last seen at a carnival at St. Priscilla's Catholic Church in Chicago, IL on 7/15/1963. Two days after her disappearance, her parents received a letter believed to be from Mary Ann, which was postmarked from Oak Park, IL. The letter (apparently written in her handwriting, but not her writing style) stated she was fine and she was going to make some money to support them. No further contact was made. It is believed Mary Ann may have been coerced to join a door-to-door sales group that was headed to California.</p>",
       "description": "Chicago, Illinois\r\nJuly 15, 1963",
@@ -2477,7 +2564,7 @@
       "weight_min": 102
     },
     {
-      "id": "7e36",
+      "id": "fafb",
       "age_range": "15 years old",
       "details": "<p>On Friday, October 31, 1969, Pamela Sue Hobley (15) and Patricia Spencer (16) (schoolmates) were reported missing from Oscoda, Michigan. The girls were not considered friends, but it is thought that they may have skipped school together and no one has seen or heard from them since. Neither girl had a purse or ID with them. Foul play is suspected.</p>",
       "description": "Oscoda, Michigan\r\nOctober 31, 1969",

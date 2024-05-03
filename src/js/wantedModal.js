@@ -1,5 +1,6 @@
 import { WantedController } from './controllers/wantedController.js';
 import { isNull } from './utils.js';
+import { renderCard } from './wantedCard.js';
 
 const Wanted = new WantedController();
 
@@ -14,7 +15,80 @@ export const renderModal = (person) => {
 
   const modalBody = document.querySelector('.modal-body');
   modalBody.innerHTML += createModalContent(person);
+  document.getElementById('close-modal').addEventListener('click', closeModal);
+
+  document.addEventListener('click', event => {
+    if (event.target.classList.contains('modal') || event.target.id === 'close-modal') {
+      closeModal();
+    }
+  });
+
+  const form = document.querySelector('.person-details-form');
+  form.addEventListener('submit', handleFormSubmit(person));
 };
+
+/**
+ * Handles the form submission event.
+ * @param {Event} event - The form submission event.
+ * @returns {Object} The updated wanted person object.
+ */
+function handleFormSubmit (person) {
+  return (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const updatedPerson = { ...person, ...getDataFromForm(form) };
+
+    Wanted.updateWantedPerson(person.id, updatedPerson)
+
+    closeModal();
+    renderNewCard(updatedPerson);
+  }
+}
+
+/**
+ * Renders a new card with updated details.
+ * @param {Object} person - The updated person object.
+ * @returns {void}
+ */
+const renderNewCard = (person) => {
+  // Remove the old card
+  const wantedCard = document.getElementById(person.id);
+  wantedCard.remove();
+  // Render the new card
+  renderCard(person);
+  // Scroll to the new card
+  document.getElementById(person.id).scrollIntoView({ behavior: 'smooth' });
+};
+
+/**
+ * Gets the person object from the form.
+ * @param {HTMLFormElement} form - The form element.
+ * @returns {Object} The person object.
+ */
+const getDataFromForm = (form) => {
+  const formData = new FormData(form);
+  const person = Object.fromEntries(formData);
+  console.log('person', person);
+  return person;
+}
+
+/**
+ * Closes the modal by removing its content and hiding it.
+ * @function closeModal
+ * @returns {void}
+ */
+const closeModal = () => {
+  // Select the modal and its content
+  const modal = document.querySelector('.modal');
+  const modalContent = document.querySelector('.modal-content');
+
+  // Check if modal exists
+  if (modal) {
+    modalContent.remove();
+    modal.classList.remove('open');
+    document.body.classList.remove('modal-open');
+  }
+}
 
 /**
  * Creates the content for the modal.

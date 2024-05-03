@@ -77,7 +77,8 @@ export class WantedController {
    * @returns {Promise<Object>} A promise that resolves with the updated person object.
    */
   async updateWantedPerson(personId, updatedPersonData) {
-
+      console.log('personId', personId);
+      console.log('updatedPersonData', updatedPersonData);
       await fetch(`${this.baseUrl}/${personId}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },

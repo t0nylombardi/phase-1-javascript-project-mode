@@ -61,6 +61,7 @@ const renderCardHtml = (person) => {
  * @returns {string} The HTML structure for the images.
  */
 const renderImagesHtml = (images, title) => {
+  if (!images) return '';
   return images.slice(0, 2).map(image => `
     <div class="image-wrapper">
       <img src="${image.large}" alt="${title}"/>
