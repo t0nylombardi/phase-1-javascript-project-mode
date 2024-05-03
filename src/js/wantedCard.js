@@ -138,17 +138,15 @@ const renderCardActionsHtml = () => {
  */
 const handleUpdateEvent = async (event) => {
   const personId = event.target.closest('.card').id;
-  try {
-    const person = await Wanted.getWantedPersonById(personId);
+  await Wanted.getWantedPersonById(personId).then(person => {
     const modal = document.querySelector('.modal');
     if (modal) {
       modal.classList.add('open');
       document.body.classList.add('modal-open');
       renderModal(person);
     }
-  } catch (error) {
-    console.error('Error fetching person:', error.message);
-  }
+  })
+  .catch((error) => console.error('Error fetching person:', error.message));
 };
 
 /**
@@ -161,7 +159,7 @@ function handleDeleteEvent(event) {
 }
 
 /**
- * Renders an alert for deleting a wanted person.
+ * Renders an alert to confirm deletion of a wanted person.
  * @param {string} personId - The id of the person to delete.
  */
 const renderAlert = (personId) => {
@@ -169,10 +167,13 @@ const renderAlert = (personId) => {
   const oldAlert = document.querySelector('.alert');
   if (oldAlert) oldAlert.remove();
 
+  // get the person to delete
   Wanted.getWantedPersonById(personId)
     .then(person => {
+      // create the alert
       const alert = document.createElement('div');
       alert.classList.add('alert');
+      // set the alert content
       alert.innerHTML = `
         <strong>Danger, Will Robinson!</strong><br>
         Are you sure you want to delete ${person.title.split('-')[0]} ?
@@ -181,14 +182,14 @@ const renderAlert = (personId) => {
           <button class="btn alert-btn btn-danger delete">Delete</button>
         </div>
       `;
+      // append the alert to the body
       document.body.appendChild(alert);
+      // add event listeners to the alert buttons
       document.querySelectorAll('.alert-btn').forEach(btn => {
         btn.addEventListener('click', handleAlertEvent(person.id));
       });
     })
 };
-
-
 
 /**
  * Handles the alert event for a wanted person card.
