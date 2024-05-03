@@ -24,10 +24,12 @@ const renderModalHtml = (person) => {
   ];
 
   return `
-    <h2 class="title">
-      // Enter new details for <span>${person.title.split('-')[0]}</span>
-    </h2>
-    ${renderForm(person, detailsObj)}
+    <div class="modal-content">
+      <h2 class="title">
+        // Enter new details for <span>${person.title.split('-')[0]}</span>
+      </h2>
+      ${renderForm(person, detailsObj)}
+    </div>
   `;
 }
 

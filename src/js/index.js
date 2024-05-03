@@ -37,7 +37,10 @@ const handleSearchEvent = (event) => {
 
 const closeModal = () => {
   const modal = document.querySelector('.modal');
+  const modalContent = document.querySelector('.modal-content');
+
   if (modal) {
+    modalContent.innerHTML = '';
     modal.classList.remove('open');
     document.body.classList.remove('modal-open');
   }
