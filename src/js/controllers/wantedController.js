@@ -35,7 +35,7 @@ export class WantedController {
    * @param {number} personId - The ID of the person to retrieve.
    * @returns {Promise<Object>} A promise that resolves with the person object.
    */
-  async getPersonById(personId) {
+  async getWantedPersonById(personId) {
     try {
       const response = await fetch(`${this.baseUrl}/${personId}`);
       if (!response.ok) {

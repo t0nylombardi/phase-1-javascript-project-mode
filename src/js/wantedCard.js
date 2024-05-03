@@ -1,4 +1,6 @@
 import { WantedController } from './controllers/wantedController.js';
+import { renderModal } from './wantedModal.js';
+import { isNull } from './utils.js';
 
 const Wanted = new WantedController();
 
@@ -13,15 +15,6 @@ export const renderCard = (person) => {
   wantedCard.appendChild(container);
   updateListeners('#updateBtn', handleUpdateEvent);
   updateListeners('#deleteBtn', handleDeleteEvent);
-};
-
-/**
- * Checks if a value is null or undefined and returns a default value if so.
- * @param {*} value - The value to check.
- * @returns {*} The original value if not null or undefined, otherwise 'N/A'.
- */
-const isNull = (value) => {
-  return value ? value : 'N/A';
 };
 
 /**
@@ -143,16 +136,17 @@ const renderCardActions = () => {
  * Handles the update event for a wanted person card.
  * @param {Event} event - The click event.
  */
-const handleUpdateEvent = (event) => {
+const handleUpdateEvent = async (event) => {
   const personId = event.target.closest('.card').id;
-  event.preventDefault();
-  const modal = document.querySelector('.modal');
-  if (modal) {
-    modal.classList.add('open');
-    document.body.classList.add('modal-open');
-  }
-  // const person = wantedPersons.find(person => person.id === personId);
-  // Wanted.updateWantedPerson(personId, person);
+  Wanted.getWantedPersonById(personId).then(person => {
+    const modal = document.querySelector('.modal');
+    if (modal) {
+      modal.classList.add('open');
+      document.body.classList.add('modal-open');
+      renderModal(person)
+    }
+  })
+  .catch(error => console.error('Error fetching person:', error.message));
 };
 
 /**
@@ -174,26 +168,3 @@ const updateListeners = (selector, handler) => {
   document.querySelectorAll(selector).forEach(btn => btn.addEventListener('click', handler));
 };
 
-// Define prototype methods
-
-/**
- * Capitalizes the first letter of a string.
- * @returns {string} The capitalized string.
- */
-Object.defineProperty(String.prototype, 'capitalize', {
-  value: function() {
-    return this.charAt(0).toUpperCase() + this.slice(1);
-  },
-  enumerable: false
-});
-
-/**
- * Removes separators from a string and converts it to title case.
- * @returns {string} The title cased string.
- */
-Object.defineProperty(String.prototype, 'removeSeparator', {
-  value: function() {
-    return this.split('_').filter(Boolean).join(' ');
-  },
-  enumerable: false
-});
