@@ -1,3 +1,12 @@
+// As a user, I want to view and edit the details of a wanted person in a modal.
+// After submitting the edited details, I expect the modal to close automatically,
+// a new card to be rendered with the updated information, and the page to scroll
+// to the newly rendered card for easy access. Additionally, I prefer the form fields
+// in the modal to be pre-filled with the existing details of the person and to only
+// display relevant information. The modal should close if I click outside of it or
+// on the close button, and it should clearly indicate the type of details I'm editing
+// to ensure accuracy in my changes.
+
 import { WantedController } from './controllers/wantedController.js';
 import { isNull } from './utils.js';
 import { renderCard } from './wantedCard.js';

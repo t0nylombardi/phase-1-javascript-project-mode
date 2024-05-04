@@ -1,3 +1,11 @@
+// As a user, I want the application to fetch data from the FBI API,
+// populate the database with information about wanted persons,
+// handle errors gracefully, and provide feedback on the loading progress,
+// ensuring that I have access to an accurate and comprehensive list of wanted persons
+// while maintaining data integrity and reliability.
+
+
+
 /**
  * Fetches data from the specified URL.
  * @param {string} url - The URL to fetch data from.

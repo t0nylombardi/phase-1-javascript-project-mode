@@ -1,3 +1,12 @@
+// As a user, I want to interact with a comprehensive card displaying details
+// about a wanted person. This card should include images for visual identification,
+// basic details like age and physical appearance, as well as additional context or
+// descriptions. Alongside these details, I expect the card to provide actions such
+// as updating or deleting the information. I prefer to have a confirmation alert
+// before deleting a card to prevent accidental removals and the option to cancel
+// the deletion if needed. Overall, I want the card actions to be clearly visible
+// and easily accessible for efficient management of the information presented.
+
 import { WantedController } from './controllers/wantedController.js';
 import { renderModal } from './wantedModal.js';
 import { isNull } from './utils.js';

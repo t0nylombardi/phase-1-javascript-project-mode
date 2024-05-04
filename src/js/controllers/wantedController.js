@@ -1,3 +1,9 @@
+// As a user, I want to interact with the FBI wanted person data through json-server RESTful API,
+// enabling me to retrieve all wanted persons, fetch specific individuals by ID, create
+// new entries, update existing details, and delete outdated information, ensuring that
+// I have access to accurate and up-to-date information about wanted persons for law
+// enforcement purposes.
+
 /**
  * Controller class for managing FBI wanted person data through RESTful API calls.
  */

@@ -1,24 +1,9 @@
-// As a user, I want the application to load properly
-// when I open it so that I can use it smoothly.
-// Feature: Initialize Application
-
-// As a user, I want to see a list of wanted people displayed
-// when I open the application so that I can know who is wanted.
-// Feature: Show Wanted People
-
-// As a user, I want to search for specific people in the
-// wanted list so that I can find them quickly.
-// Feature: Handle Search Event
-
-// As a user, I want the application to respond to my interactions,
-// like typing in the search box or clicking on buttons, so that I can use it easily.
-// Feature: Add Event Listeners
-
-// As a user, I want to be able to customize strings easily,
-// like making the first letter uppercase or removing certain characters,
-// so that I can format text the way I want.
-// Feature: Prototype Methods
-
+// As a user, I want the application to load smoothly upon opening, displaying a
+// list of wanted people, and providing search functionality for quick access.
+// Additionally, I expect the application to respond seamlessly to my interactions,
+// such as typing in the search box or clicking on buttons.
+// Furthermore, I desire the ability to easily customize strings, enabling me to
+// format text according to my preferences.
 
 import { renderCard } from './wantedCard.js';
 import { loadDB } from './db/db.js';
