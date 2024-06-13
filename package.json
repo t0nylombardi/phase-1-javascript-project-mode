@@ -14,7 +14,7 @@
   ],
   "private": true,
   "packageManager": "yarn@4.3.0",
-  "devDependencies": {
+  "dependencies": {
     "concurrently": "^8.2.2",
     "json-server": "0.17.4"
   }
