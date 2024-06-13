@@ -4,8 +4,6 @@
 // ensuring that I have access to an accurate and comprehensive list of wanted persons
 // while maintaining data integrity and reliability.
 
-
-
 /**
  * Fetches data from the specified URL.
  * @param {string} url - The URL to fetch data from.
@@ -15,7 +13,7 @@ const fetchData = async (url) => {
   try {
     const response = await fetch(url);
     if (!response.ok) {
-      throw new Error('Failed to fetch data');
+      throw new Error("Failed to fetch data");
     }
     return await response.json();
   } catch (error) {
@@ -30,9 +28,9 @@ const fetchData = async (url) => {
  */
 export const loadDB = async () => {
   try {
-    const data = await fetchData('http://localhost:3000/wanted');
+    const data = await fetchData("http://127.0.0.1:3000/wanted");
     if (data && data.length === 0) {
-      console.log('fetching data from FBI API...');
+      console.log("fetching data from FBI API...");
       await fetchFbiApi();
     }
     console.log(`${data.length} items loaded from the database.`);
@@ -59,10 +57,10 @@ const fetchFbiApi = async () => {
           fetchPromises.push(...data.items);
           data.items.forEach(PopulateDb);
         }
-    })
-    .catch((error) => {
-      console.error('Error fetching data:', error);
-    });
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
   }
   await loadDB();
   console.log(`${fetchPromises.length} items added to the database.`);
@@ -95,22 +93,22 @@ const PopulateDb = async (person) => {
 
   // Construct the request options
   const requestOptions = {
-    method: 'POST',
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
     body: JSON.stringify(requestBody),
   };
 
   // Send the request
   try {
-    await fetch('http://localhost:3000/wanted', requestOptions)
+    await fetch("http://127.0.0.1:3000/wanted", requestOptions)
       .then((res) => res.json())
       .catch((error) => {
-      // Handle errors
-      console.error('Error sending data:', error);
-    });
+        // Handle errors
+        console.error("Error sending data:", error);
+      });
   } catch (error) {
-    console.error('Error sending data:', error);
+    console.error("Error sending data:", error);
   }
 };

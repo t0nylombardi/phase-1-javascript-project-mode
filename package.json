@@ -5,5 +5,14 @@
   "main": "src/js/index.js",
   "repository": "https://github.com/t0nylombardi/phase-1-javascript-project-mode.git",
   "author": "t0nylombardi",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "moch-server": "json-server --watch src/db.json --port 3000",
+    "start": "concurrently \"npm run moch-server\" \"live-server --port=8080\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "json-server": "^1.0.0-beta.1",
+    "live-server": "^1.2.2"
+  }
 }

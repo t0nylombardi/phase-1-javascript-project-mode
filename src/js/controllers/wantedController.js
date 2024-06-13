@@ -16,7 +16,7 @@ export class WantedController {
      * Base URL of the API.
      * @type {string}
      */
-    this.baseUrl = 'http://localhost:3000/wanted';
+    this.baseUrl = "http://127.0.0.1:3000/wanted";
   }
 
   /**
@@ -27,11 +27,11 @@ export class WantedController {
     try {
       const response = await fetch(`${this.baseUrl}`);
       if (!response.ok) {
-        throw new Error('Failed to fetch wanted persons');
+        throw new Error("Failed to fetch wanted persons");
       }
       return await response.json();
     } catch (error) {
-      console.error('Error fetching wanted persons:', error.message);
+      console.error("Error fetching wanted persons:", error.message);
       throw error;
     }
   }
@@ -49,7 +49,10 @@ export class WantedController {
       }
       return await response.json();
     } catch (error) {
-      console.error(`Error fetching person with ID ${personId}:`, error.message);
+      console.error(
+        `Error fetching person with ID ${personId}:`,
+        error.message
+      );
       throw error;
     }
   }
@@ -62,16 +65,16 @@ export class WantedController {
   async createWantedPerson(person) {
     try {
       const response = await fetch(`${this.baseUrl}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(person)
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(person),
       });
       if (!response.ok) {
-        throw new Error('Failed to create person');
+        throw new Error("Failed to create person");
       }
       return await response.json();
     } catch (error) {
-      console.error('Error creating person:', error.message);
+      console.error("Error creating person:", error.message);
       throw error;
     }
   }
@@ -83,18 +86,22 @@ export class WantedController {
    * @returns {Promise<Object>} A promise that resolves with the updated person object.
    */
   async updateWantedPerson(personId, updatedPersonData) {
-      console.log('personId', personId);
-      console.log('updatedPersonData', updatedPersonData);
-      await fetch(`${this.baseUrl}/${personId}`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(updatedPersonData)
+    console.log("personId", personId);
+    console.log("updatedPersonData", updatedPersonData);
+    await fetch(`${this.baseUrl}/${personId}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updatedPersonData),
+    })
+      .then((response) => {
+        if (!response.ok)
+          throw new Error(`Failed to update person with ID ${personId}`);
       })
-      .then(response => {
-        if (!response.ok) throw new Error(`Failed to update person with ID ${personId}`);
-      })
-      .catch(error => {
-        console.error(`Error updating person with ID ${personId}:`, error.message);
+      .catch((error) => {
+        console.error(
+          `Error updating person with ID ${personId}:`,
+          error.message
+        );
       });
   }
 
@@ -106,14 +113,17 @@ export class WantedController {
   async deleteWantedPerson(personId) {
     try {
       const response = await fetch(`${this.baseUrl}/${personId}`, {
-        method: 'DELETE'
+        method: "DELETE",
       });
       if (!response.ok) {
         throw new Error(`Failed to delete person with ID ${personId}`);
       }
       return response.ok;
     } catch (error) {
-      console.error(`Error deleting person with ID ${personId}:`, error.message);
+      console.error(
+        `Error deleting person with ID ${personId}:`,
+        error.message
+      );
       throw error;
     }
   }

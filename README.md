@@ -8,10 +8,22 @@ The apllication displays cards that include visual identification images, basic 
 ## Installation
 
 - Clone the repository from [https://github.com/t0nylombardi/phase-1-javascript-project-mode](https://github.com/t0nylombardi/phase-1-javascript-project-mode).
-- Install [JSON-Server](https://www.npmjs.com/package/json-server)
-- Run JSON-server
+- install **YARN**
   ```shell
-  json-server --watch src/db.json
+    npm install yarn
+  ```
+- Install dependencies
+  ```shell
+    yarn install
+  ```
+- Run JSON-Server
+  ```shell
+    yarn run
+  ```
+- Run the app
+  ```shell
+    yarn run start
+  ```
 
 ## License:
 

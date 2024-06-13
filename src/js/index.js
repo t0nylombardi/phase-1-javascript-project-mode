@@ -5,8 +5,8 @@
 // Furthermore, I desire the ability to easily customize strings, enabling me to
 // format text according to my preferences.
 
-import { renderCard } from './wantedCard.js';
-import { loadDB } from './db/db.js';
+import { renderCard } from "./wantedCard.js";
+import { loadDB } from "./db/db.js";
 
 /**
  * Initializes the application.
@@ -25,24 +25,29 @@ const init = async () => {
  * @returns {void}
  */
 const showWanted = async () => {
-  console.log('Fetching wanted people...');
-  await fetch('http://localhost:3000/wanted')
+  console.log("Fetching wanted people...");
+  await fetch("http://127.0.0.1:3000/wanted")
     .then((response) => response.json())
-    .then((data) => data.forEach((person) => {
-      renderCard(person)
-    }))
+    .then((data) =>
+      data.forEach((person) => {
+        renderCard(person);
+      })
+    )
     .catch((error) => {
-      console.error('There has been a problem with your fetch operation:', error);
+      console.error(
+        "There has been a problem with your fetch operation:",
+        error
+      );
     });
 };
 
 const handleSearchEvent = (event) => {
   const searchTerm = event.target.value.trim().toLowerCase();
-  const cards = document.querySelectorAll('div.card');
-  cards.forEach(card => {
-    card.style.display = 'revert';
+  const cards = document.querySelectorAll("div.card");
+  cards.forEach((card) => {
+    card.style.display = "revert";
     if (!card.innerText.toLowerCase().includes(searchTerm)) {
-      card.style.display = 'none';
+      card.style.display = "none";
     }
   });
 };
@@ -55,7 +60,9 @@ const handleSearchEvent = (event) => {
  * @listens document:click
  */
 const addEventListeners = () => {
-  document.getElementById('searchbox').addEventListener('keyup', handleSearchEvent);
+  document
+    .getElementById("searchbox")
+    .addEventListener("keyup", handleSearchEvent);
 };
 
 // Define prototype methods
@@ -64,36 +71,38 @@ const addEventListeners = () => {
  * Capitalizes the first letter of a string.
  * @returns {string} The capitalized string.
  */
-Object.defineProperty(String.prototype, 'capitalize', {
-  value: function() {
+Object.defineProperty(String.prototype, "capitalize", {
+  value: function () {
     return this.charAt(0).toUpperCase() + this.slice(1);
   },
-  enumerable: false
+  enumerable: false,
 });
 
 /**
  * Removes separators from a string and converts it to title case.
  * @returns {string} The title cased string.
  */
-Object.defineProperty(String.prototype, 'removeSeparator', {
-  value: function() {
-    return this.split('_').filter(Boolean).join(' ');
+Object.defineProperty(String.prototype, "removeSeparator", {
+  value: function () {
+    return this.split("_").filter(Boolean).join(" ");
   },
-  enumerable: false
+  enumerable: false,
 });
 
 /**
  * Converts a string to camel case.
  * @returns {string} The camel cased string.
  */
-Object.defineProperty(String.prototype, 'camelCase', {
-  value: function() {
-    return this.removeSeparator().split(' ').map((word, index) => {
-      return index === 0 ? word.toLowerCase() : word.capitalize();
-    }).join('');
+Object.defineProperty(String.prototype, "camelCase", {
+  value: function () {
+    return this.removeSeparator()
+      .split(" ")
+      .map((word, index) => {
+        return index === 0 ? word.toLowerCase() : word.capitalize();
+      })
+      .join("");
   },
-  enumerable: false
+  enumerable: false,
 });
 
-
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener("DOMContentLoaded", init);
