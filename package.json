@@ -14,5 +14,10 @@
     "concurrently": "^8.2.2",
     "json-server": "^1.0.0-beta.1",
     "live-server": "^1.2.2"
-  }
+  },
+  "workspaces": [
+    "client"
+  ],
+  "private": true,
+  "packageManager": "yarn@4.3.0"
 }
