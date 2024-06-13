@@ -1,5 +1,6 @@
 // Description: This file is used to run the JSON server on Heroku.
-import jsonServer from "json-server";
+// import jsonServer from "json-server";
+jsonServer = require("json-server");
 
 const server = jsonServer.create();
 const router = jsonServer.router("src/db.json");

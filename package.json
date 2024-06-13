@@ -6,7 +6,6 @@
   "repository": "https://github.com/t0nylombardi/phase-1-javascript-project-mode.git",
   "author": "t0nylombardi",
   "license": "MIT",
-  "type": "module",
   "scripts": {
     "start": "node server.js"
   },
