@@ -16,13 +16,13 @@ The apllication displays cards that include visual identification images, basic 
   ```shell
     yarn install
   ```
-- Run JSON-Server
-  ```shell
-    yarn run
-  ```
 - Run the app
   ```shell
     yarn run start
+  ```
+  -- Finally open the html(MacOs Only)
+  ```shell
+    open -a "<Your Browser i.e. 'Google Chrome'> ./index.html"
   ```
 
 ## License:

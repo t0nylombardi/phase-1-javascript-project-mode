@@ -10,9 +10,10 @@ tmp
 *.log
 *.swp
 
+.pnp.*
 .yarn/*
-!.yarn/cache
-!.yarn/releases
+!.yarn/patches
 !.yarn/plugins
+!.yarn/releases
 !.yarn/sdks
 !.yarn/versions
