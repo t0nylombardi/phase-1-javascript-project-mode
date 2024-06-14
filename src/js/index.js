@@ -7,6 +7,7 @@
 
 import { renderCard } from "./wantedCard.js";
 import { loadDB } from "./db/db.js";
+import { env } from "./utils.js";
 
 /**
  * Initializes the application.
@@ -26,7 +27,7 @@ const init = async () => {
  */
 const showWanted = async () => {
   console.log("Fetching wanted people...");
-  await fetch("http://127.0.0.1:3000/wanted")
+  await fetch(env.API_URL || "http://127.0.0.1:3000/wanted")
     .then((response) => response.json())
     .then((data) =>
       data.forEach((person) => {

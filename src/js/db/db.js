@@ -4,6 +4,8 @@
 // ensuring that I have access to an accurate and comprehensive list of wanted persons
 // while maintaining data integrity and reliability.
 
+import { env } from "../utils.js";
+
 /**
  * Fetches data from the specified URL.
  * @param {string} url - The URL to fetch data from.
@@ -28,7 +30,7 @@ const fetchData = async (url) => {
  */
 export const loadDB = async () => {
   try {
-    const data = await fetchData("http://127.0.0.1:3000/wanted");
+    const data = await fetchData(env.API_URL || "http://127.0.0.1:3000/wanted");
     if (data && data.length === 0) {
       console.log("fetching data from FBI API...");
       await fetchFbiApi();
@@ -102,7 +104,7 @@ const PopulateDb = async (person) => {
 
   // Send the request
   try {
-    await fetch("http://127.0.0.1:3000/wanted", requestOptions)
+    await fetch(env.API_URL || "http://127.0.0.1:3000/wanted", requestOptions)
       .then((res) => res.json())
       .catch((error) => {
         // Handle errors

@@ -4,6 +4,8 @@
 // I have access to accurate and up-to-date information about wanted persons for law
 // enforcement purposes.
 
+import { env } from "../utils.js";
+
 /**
  * Controller class for managing FBI wanted person data through RESTful API calls.
  */
@@ -16,7 +18,8 @@ export class WantedController {
      * Base URL of the API.
      * @type {string}
      */
-    this.baseUrl = "http://127.0.0.1:3000/wanted";
+    // env or string
+    this.baseUrl = env.API_URL || "http://127.0.0.1:3000/wanted";
   }
 
   /**
